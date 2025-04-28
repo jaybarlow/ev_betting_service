@@ -1,0 +1,4337 @@
+{
+  "components": [
+    {
+      "tree_compo_key": "menu_header",
+      "ttl": 180,
+      "data": {
+        "title": "Header Menu",
+        "unfold": null,
+        "menu": []
+      },
+      "execution_time": "0.0008120537"
+    },
+    {
+      "tree_compo_key": "menu_quick_access",
+      "ttl": 180,
+      "data": {
+        "title": "Quick Links",
+        "unfold": null,
+        "menu": [
+          {
+            "label": "Register Now",
+            "url": "https://www.crabsports.com/en-US/registration",
+            "icon": "icon-login",
+            "target": "_blank",
+            "priority": 1,
+            "id": null,
+            "redirect_to": null
+          },
+          {
+            "label": "Deposit",
+            "url": "https://www.crabsports.com/auth/realms/crabsports/protocol/openid-connect/auth?client_id=web-crabsports&redirect_uri=https%3A%2F%2Fwww.crabsports.com%2Fen-US%2Fsports&response_type=code&scope=openid+crabsports&state=eefc764e72054908af485521808984a5&code_c",
+            "icon": "icon-deposit",
+            "target": "_blank",
+            "priority": 2,
+            "id": null,
+            "redirect_to": null
+          },
+          {
+            "label": "Promotions",
+            "url": "https://www.crabsports.com/en-US/promo",
+            "icon": "icon-promo-2",
+            "target": "_blank",
+            "priority": 3,
+            "id": null,
+            "redirect_to": null
+          },
+          {
+            "label": "Live Events",
+            "url": "/en_us/live-betting",
+            "icon": "icon-live-2",
+            "target": "_self",
+            "priority": 4,
+            "id": null,
+            "redirect_to": null
+          }
+        ]
+      },
+      "execution_time": "0.0000040531"
+    },
+    {
+      "tree_compo_key": "menu_top_league",
+      "ttl": 180,
+      "data": {
+        "title": "Popular",
+        "unfold": null,
+        "menu": [
+          {
+            "id": 206,
+            "label": "NBA Playoffs",
+            "icon": "icon-sport-basketball",
+            "nb_bets": 0,
+            "nb_events": 0,
+            "url": "/en_us/basketball/united-states/nba",
+            "url_type": "url_key",
+            "identifier": "competition"
+          },
+          {
+            "id": 36594,
+            "label": "MLB",
+            "icon": "icon-sport-baseball",
+            "nb_bets": 0,
+            "nb_events": 0,
+            "url": "/en_us/baseball/united-states/mlb",
+            "url_type": "url_key",
+            "identifier": "competition"
+          },
+          {
+            "id": 6,
+            "label": "NHL Playoffs",
+            "icon": "icon-sport-hockey",
+            "nb_bets": 0,
+            "nb_events": 0,
+            "url": "/en_us/ice-hockey/united-states/nhl",
+            "url_type": "url_key",
+            "identifier": "competition"
+          },
+          {
+            "id": 23723,
+            "label": "NCAA Baseball",
+            "icon": "icon-sport-baseball",
+            "nb_bets": 0,
+            "nb_events": 0,
+            "url": "/en_us/baseball/united-states/ncaa",
+            "url_type": "url_key",
+            "identifier": "competition"
+          },
+          {
+            "id": 26,
+            "label": "Table Tennis",
+            "icon": "icon-sport-pingpong",
+            "nb_bets": 0,
+            "nb_events": 0,
+            "url": "/en_us/table-tennis",
+            "url_type": "url_key",
+            "identifier": "sport",
+            "provider": "sportx",
+            "type": null
+          },
+          {
+            "id": 40752,
+            "label": "ATP - Madrid Open",
+            "icon": "icon-sport-tennis",
+            "nb_bets": 0,
+            "nb_events": 0,
+            "url": "/en_us/tennis/atp/madrid-spain",
+            "url_type": "url_key",
+            "identifier": "competition"
+          },
+          {
+            "id": 60019,
+            "label": "WTA - Madrid Open",
+            "icon": "icon-sport-tennis",
+            "nb_bets": 0,
+            "nb_events": 0,
+            "url": "/en_us/tennis/wta/madrid-spain-w",
+            "url_type": "url_key",
+            "identifier": "competition"
+          },
+          {
+            "id": 94,
+            "label": "English Premier League",
+            "icon": "icon-sport-soccer",
+            "nb_bets": 0,
+            "nb_events": 0,
+            "url": "/en_us/soccer/england/premier-league",
+            "url_type": "url_key",
+            "identifier": "competition"
+          },
+          {
+            "id": 6674,
+            "label": "UEFA Champions League",
+            "icon": "icon-sport-soccer",
+            "nb_bets": 0,
+            "nb_events": 0,
+            "url": "/en_us/soccer/champions-league/champions-league",
+            "url_type": "url_key",
+            "identifier": "competition"
+          },
+          {
+            "id": 6675,
+            "label": "UEFA Europa League",
+            "icon": "icon-sport-soccer",
+            "nb_bets": 0,
+            "nb_events": 0,
+            "url": "/en_us/soccer/europa-league/europa-league",
+            "url_type": "url_key",
+            "identifier": "competition"
+          },
+          {
+            "id": 40004,
+            "label": "UFC",
+            "icon": "icon-sport-mma",
+            "nb_bets": 0,
+            "nb_events": 0,
+            "url": "/en_us/mma/ufc/fights",
+            "url_type": "url_key",
+            "identifier": "competition"
+          },
+          {
+            "id": 5,
+            "label": "MLS",
+            "icon": "icon-sport-soccer",
+            "nb_bets": 0,
+            "nb_events": 0,
+            "url": "/en_us/soccer/united-states/major-league-soccer",
+            "url_type": "url_key",
+            "identifier": "competition"
+          }
+        ]
+      },
+      "execution_time": "0.0000038147"
+    },
+    {
+      "tree_compo_key": "menu_sport",
+      "ttl": 180,
+      "data": {
+        "title": "All Sports",
+        "unfold": null,
+        "menu": [
+          {
+            "id": -1,
+            "url": "/en_us/live-betting",
+            "label": "In-Play",
+            "icon": "badge-live",
+            "nb_bets": null,
+            "nb_events": 36,
+            "highlight_type": "live",
+            "identifier": "live",
+            "menu": [
+              {
+                "id": 3,
+                "url": "/en_us/baseball",
+                "url_type": "url_key",
+                "label": "Baseball",
+                "icon": "baseball",
+                "nb_bets": 0,
+                "nb_events": 1,
+                "menu": [],
+                "identifier": "sport",
+                "type": null,
+                "provider": null
+              },
+              {
+                "id": 4,
+                "url": "/en_us/basketball",
+                "url_type": "url_key",
+                "label": "Basketball",
+                "icon": "basketball",
+                "nb_bets": 0,
+                "nb_events": 6,
+                "menu": [],
+                "identifier": "sport",
+                "type": null,
+                "provider": null
+              },
+              {
+                "id": 10,
+                "url": "/en_us/ice-hockey",
+                "url_type": "url_key",
+                "label": "Ice Hockey",
+                "icon": "hockey",
+                "nb_bets": 0,
+                "nb_events": 2,
+                "menu": [],
+                "identifier": "sport",
+                "type": null,
+                "provider": null
+              },
+              {
+                "id": 26,
+                "url": "/en_us/table-tennis",
+                "url_type": "url_key",
+                "label": "Table Tennis",
+                "icon": "pingpong",
+                "nb_bets": 0,
+                "nb_events": 1,
+                "menu": [],
+                "identifier": "sport",
+                "type": null,
+                "provider": null
+              },
+              {
+                "id": 21,
+                "url": "/en_us/tennis",
+                "url_type": "url_key",
+                "label": "Tennis",
+                "icon": "tennis",
+                "nb_bets": 0,
+                "nb_events": 4,
+                "menu": [],
+                "identifier": "sport",
+                "type": null,
+                "provider": null
+              },
+              {
+                "id": 13,
+                "url": "/en_us/soccer",
+                "url_type": "url_key",
+                "label": "Soccer",
+                "icon": "soccer",
+                "nb_bets": 0,
+                "nb_events": 21,
+                "menu": [],
+                "identifier": "sport",
+                "type": null,
+                "provider": null
+              },
+              {
+                "id": 9,
+                "url": "/en_us/handball",
+                "url_type": "url_key",
+                "label": "Handball",
+                "icon": "handball",
+                "nb_bets": 0,
+                "nb_events": 1,
+                "menu": [],
+                "identifier": "sport",
+                "type": null,
+                "provider": null
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "url": "/en_us/baseball",
+            "url_type": "url_key",
+            "label": "Baseball",
+            "icon": "baseball",
+            "nb_bets": 736,
+            "nb_events": 21,
+            "menu": [
+              {
+                "id": 94,
+                "url": "/en_us/baseball/united-states",
+                "url_type": "url_key",
+                "label": "United States",
+                "nb_bets": 532,
+                "nb_events": 10,
+                "menu": [
+                  {
+                    "id": 36594,
+                    "url": "/en_us/baseball/united-states/mlb",
+                    "url_type": "url_key",
+                    "label": "MLB",
+                    "nb_bets": 528,
+                    "nb_events": 8,
+                    "identifier": "competition",
+                    "is_pinned": true
+                  },
+                  {
+                    "id": 23723,
+                    "url": "/en_us/baseball/united-states/ncaa",
+                    "url_type": "url_key",
+                    "label": "NCAA",
+                    "nb_bets": 4,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 235,
+                "url": "/en_us/baseball/japan",
+                "url_type": "url_key",
+                "label": "Japan",
+                "nb_bets": 111,
+                "nb_events": 6,
+                "menu": [
+                  {
+                    "id": 37040,
+                    "url": "/en_us/baseball/japan/npb",
+                    "url_type": "url_key",
+                    "label": "NPB",
+                    "nb_bets": 111,
+                    "nb_events": 6,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 624,
+                "url": "/en_us/baseball/south-korea",
+                "url_type": "url_key",
+                "label": "South Korea",
+                "nb_bets": 93,
+                "nb_events": 5,
+                "menu": [
+                  {
+                    "id": 37304,
+                    "url": "/en_us/baseball/south-korea/kbo-league",
+                    "url_type": "url_key",
+                    "label": "KBO League",
+                    "nb_bets": 93,
+                    "nb_events": 5,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              }
+            ],
+            "identifier": "sport",
+            "type": null,
+            "provider": "sportx"
+          },
+          {
+            "id": 4,
+            "url": "/en_us/basketball",
+            "url_type": "url_key",
+            "label": "Basketball",
+            "icon": "basketball",
+            "nb_bets": 2320,
+            "nb_events": 57,
+            "menu": [
+              {
+                "id": 7,
+                "url": "/en_us/basketball/united-states",
+                "url_type": "url_key",
+                "label": "United States",
+                "nb_bets": 1255,
+                "nb_events": 26,
+                "menu": [
+                  {
+                    "id": 206,
+                    "url": "/en_us/basketball/united-states/nba",
+                    "url_type": "url_key",
+                    "label": "NBA",
+                    "nb_bets": 1255,
+                    "nb_events": 26,
+                    "identifier": "competition",
+                    "is_pinned": true
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 100,
+                "url": "/en_us/basketball/european-cups",
+                "url_type": "url_key",
+                "label": "European Cups",
+                "nb_bets": 366,
+                "nb_events": 10,
+                "menu": [
+                  {
+                    "id": 12044,
+                    "url": "/en_us/basketball/european-cups/euroleague",
+                    "url_type": "url_key",
+                    "label": "Euroleague",
+                    "nb_bets": 366,
+                    "nb_events": 10,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 361,
+                "url": "/en_us/basketball/argentina",
+                "url_type": "url_key",
+                "label": "Argentina",
+                "nb_bets": 127,
+                "nb_events": 10,
+                "menu": [
+                  {
+                    "id": 46204,
+                    "url": "/en_us/basketball/argentina/la-liga",
+                    "url_type": "url_key",
+                    "label": "La Liga",
+                    "nb_bets": 12,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 43617,
+                    "url": "/en_us/basketball/argentina/la-liga-federal",
+                    "url_type": "url_key",
+                    "label": "La Liga Federal",
+                    "nb_bets": 80,
+                    "nb_events": 4,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 4819,
+                    "url": "/en_us/basketball/argentina/liga-nacional",
+                    "url_type": "url_key",
+                    "label": "Liga Nacional",
+                    "nb_bets": 35,
+                    "nb_events": 4,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 567,
+                "url": "/en_us/basketball/brazil",
+                "url_type": "url_key",
+                "label": "Brazil",
+                "nb_bets": 436,
+                "nb_events": 3,
+                "menu": [
+                  {
+                    "id": 5254,
+                    "url": "/en_us/basketball/brazil/nbb",
+                    "url_type": "url_key",
+                    "label": "NBB",
+                    "nb_bets": 436,
+                    "nb_events": 3,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 499,
+                "url": "/en_us/basketball/eurobasket",
+                "url_type": "url_key",
+                "label": "EuroBasket",
+                "nb_bets": 1,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 36389,
+                    "url": "/en_us/basketball/eurobasket/eurobasket",
+                    "url_type": "url_key",
+                    "label": "EuroBasket",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 25,
+                "url": "/en_us/basketball/france",
+                "url_type": "url_key",
+                "label": "France",
+                "nb_bets": 47,
+                "nb_events": 3,
+                "menu": [
+                  {
+                    "id": 495,
+                    "url": "/en_us/basketball/france/pro-a",
+                    "url_type": "url_key",
+                    "label": "Pro A",
+                    "nb_bets": 27,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 496,
+                    "url": "/en_us/basketball/france/pro-b",
+                    "url_type": "url_key",
+                    "label": "Pro B",
+                    "nb_bets": 20,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 462,
+                "url": "/en_us/basketball/international-clubs",
+                "url_type": "url_key",
+                "label": "International Clubs",
+                "nb_bets": 22,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 45369,
+                    "url": "/en_us/basketball/international-clubs/aba-league",
+                    "url_type": "url_key",
+                    "label": "ABA League",
+                    "nb_bets": 22,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 21,
+                "url": "/en_us/basketball/italy",
+                "url_type": "url_key",
+                "label": "Italy",
+                "nb_bets": 60,
+                "nb_events": 2,
+                "menu": [
+                  {
+                    "id": 40,
+                    "url": "/en_us/basketball/italy/lega-a",
+                    "url_type": "url_key",
+                    "label": "Lega A",
+                    "nb_bets": 60,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 826,
+                "url": "/en_us/basketball/uruguay",
+                "url_type": "url_key",
+                "label": "Uruguay",
+                "nb_bets": 6,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 46461,
+                    "url": "/en_us/basketball/uruguay/liga",
+                    "url_type": "url_key",
+                    "label": "Liga",
+                    "nb_bets": 6,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              }
+            ],
+            "identifier": "sport",
+            "type": null,
+            "provider": "sportx"
+          },
+          {
+            "id": 10,
+            "url": "/en_us/ice-hockey",
+            "url_type": "url_key",
+            "label": "Ice Hockey",
+            "icon": "hockey",
+            "nb_bets": 828,
+            "nb_events": 57,
+            "menu": [
+              {
+                "id": 5,
+                "url": "/en_us/ice-hockey/united-states",
+                "url_type": "url_key",
+                "label": "United States",
+                "nb_bets": 610,
+                "nb_events": 33,
+                "menu": [
+                  {
+                    "id": 6,
+                    "url": "/en_us/ice-hockey/united-states/nhl",
+                    "url_type": "url_key",
+                    "label": "NHL",
+                    "nb_bets": 471,
+                    "nb_events": 26,
+                    "identifier": "competition",
+                    "is_pinned": true
+                  },
+                  {
+                    "id": 57972,
+                    "url": "/en_us/ice-hockey/united-states/ahl",
+                    "url_type": "url_key",
+                    "label": "AHL",
+                    "nb_bets": 90,
+                    "nb_events": 4,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 61867,
+                    "url": "/en_us/ice-hockey/united-states/pwhl",
+                    "url_type": "url_key",
+                    "label": "PWHL",
+                    "nb_bets": 49,
+                    "nb_events": 3,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 2587,
+                "url": "/en_us/ice-hockey/canada",
+                "url_type": "url_key",
+                "label": "Canada",
+                "nb_bets": 36,
+                "nb_events": 2,
+                "menu": [
+                  {
+                    "id": 55624,
+                    "url": "/en_us/ice-hockey/canada/ohl",
+                    "url_type": "url_key",
+                    "label": "OHL",
+                    "nb_bets": 36,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 277,
+                "url": "/en_us/ice-hockey/czech-republic",
+                "url_type": "url_key",
+                "label": "Czech Republic",
+                "nb_bets": 33,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 44489,
+                    "url": "/en_us/ice-hockey/czech-republic/extraliga",
+                    "url_type": "url_key",
+                    "label": "Extraliga",
+                    "nb_bets": 33,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 359,
+                "url": "/en_us/ice-hockey/germany",
+                "url_type": "url_key",
+                "label": "Germany",
+                "nb_bets": 6,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 3774,
+                    "url": "/en_us/ice-hockey/germany/del",
+                    "url_type": "url_key",
+                    "label": "DEL",
+                    "nb_bets": 6,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 278,
+                "url": "/en_us/ice-hockey/sweden",
+                "url_type": "url_key",
+                "label": "Sweden",
+                "nb_bets": 33,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 2249,
+                    "url": "/en_us/ice-hockey/sweden/shl",
+                    "url_type": "url_key",
+                    "label": "SHL",
+                    "nb_bets": 33,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 631,
+                "url": "/en_us/ice-hockey/world-championship",
+                "url_type": "url_key",
+                "label": "World Championship",
+                "nb_bets": 110,
+                "nb_events": 19,
+                "menu": [
+                  {
+                    "id": 767,
+                    "url": "/en_us/ice-hockey/world-championship/world-championship",
+                    "url_type": "url_key",
+                    "label": "World Championship",
+                    "nb_bets": 78,
+                    "nb_events": 17,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 29409,
+                    "url": "/en_us/ice-hockey/world-championship/world-championships-division-2a",
+                    "url_type": "url_key",
+                    "label": "World Championships, Division 2A",
+                    "nb_bets": 32,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              }
+            ],
+            "identifier": "sport",
+            "type": null,
+            "provider": "sportx"
+          },
+          {
+            "id": 26,
+            "url": "/en_us/table-tennis",
+            "url_type": "url_key",
+            "label": "Table Tennis",
+            "icon": "pingpong",
+            "nb_bets": 128,
+            "nb_events": 8,
+            "menu": [
+              {
+                "id": 1857,
+                "url": "/en_us/table-tennis/poland",
+                "url_type": "url_key",
+                "label": "Poland",
+                "nb_bets": 128,
+                "nb_events": 8,
+                "menu": [
+                  {
+                    "id": 48938,
+                    "url": "/en_us/table-tennis/poland/tt-elite-series",
+                    "url_type": "url_key",
+                    "label": "TT Elite Series",
+                    "nb_bets": 128,
+                    "nb_events": 8,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              }
+            ],
+            "identifier": "sport",
+            "type": null,
+            "provider": "sportx"
+          },
+          {
+            "id": 21,
+            "url": "/en_us/tennis",
+            "url_type": "url_key",
+            "label": "Tennis",
+            "icon": "tennis",
+            "nb_bets": 1048,
+            "nb_events": 114,
+            "menu": [
+              {
+                "id": 247,
+                "url": "/en_us/tennis/atp",
+                "url_type": "url_key",
+                "label": "ATP",
+                "nb_bets": 246,
+                "nb_events": 14,
+                "menu": [
+                  {
+                    "id": 40752,
+                    "url": "/en_us/tennis/atp/madrid-spain",
+                    "url_type": "url_key",
+                    "label": "Madrid, Spain",
+                    "nb_bets": 242,
+                    "nb_events": 10,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 43725,
+                    "url": "/en_us/tennis/atp/australian-open",
+                    "url_type": "url_key",
+                    "label": "Australian Open",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 50467,
+                    "url": "/en_us/tennis/atp/french-open",
+                    "url_type": "url_key",
+                    "label": "French Open",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 43763,
+                    "url": "/en_us/tennis/atp/us-open",
+                    "url_type": "url_key",
+                    "label": "US Open",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 49159,
+                    "url": "/en_us/tennis/atp/wimbledon",
+                    "url_type": "url_key",
+                    "label": "Wimbledon",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 234,
+                "url": "/en_us/tennis/wta",
+                "url_type": "url_key",
+                "label": "WTA",
+                "nb_bets": 152,
+                "nb_events": 10,
+                "menu": [
+                  {
+                    "id": 60019,
+                    "url": "/en_us/tennis/wta/madrid-spain-w",
+                    "url_type": "url_key",
+                    "label": "Madrid, Spain (W)",
+                    "nb_bets": 148,
+                    "nb_events": 6,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 47808,
+                    "url": "/en_us/tennis/wta/australian-open-w",
+                    "url_type": "url_key",
+                    "label": "Australian Open (W)",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 36602,
+                    "url": "/en_us/tennis/wta/french-open-w",
+                    "url_type": "url_key",
+                    "label": "French Open (W)",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 57585,
+                    "url": "/en_us/tennis/wta/us-open-w",
+                    "url_type": "url_key",
+                    "label": "US Open (W)",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 50477,
+                    "url": "/en_us/tennis/wta/wimbledon-w",
+                    "url_type": "url_key",
+                    "label": "Wimbledon (W)",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 304,
+                "url": "/en_us/tennis/atp-challenger",
+                "url_type": "url_key",
+                "label": "ATP - Challenger",
+                "nb_bets": 490,
+                "nb_events": 48,
+                "menu": [
+                  {
+                    "id": 55817,
+                    "url": "/en_us/tennis/atp-challenger/aix-en-provence-france",
+                    "url_type": "url_key",
+                    "label": "Aix-en-Provence, France",
+                    "nb_bets": 72,
+                    "nb_events": 8,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 62756,
+                    "url": "/en_us/tennis/atp-challenger/estoril-portugal",
+                    "url_type": "url_key",
+                    "label": "Estoril, Portugal",
+                    "nb_bets": 79,
+                    "nb_events": 8,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 57559,
+                    "url": "/en_us/tennis/atp-challenger/guangzhou-china",
+                    "url_type": "url_key",
+                    "label": "Guangzhou, China",
+                    "nb_bets": 119,
+                    "nb_events": 9,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 49654,
+                    "url": "/en_us/tennis/atp-challenger/mauthausen-austria",
+                    "url_type": "url_key",
+                    "label": "Mauthausen, Austria",
+                    "nb_bets": 56,
+                    "nb_events": 5,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 55723,
+                    "url": "/en_us/tennis/atp-challenger/ostrava-czech-republic",
+                    "url_type": "url_key",
+                    "label": "Ostrava, Czech Republic",
+                    "nb_bets": 69,
+                    "nb_events": 7,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 60067,
+                    "url": "/en_us/tennis/atp-challenger/porto-alegre-brazil",
+                    "url_type": "url_key",
+                    "label": "Porto Alegre, Brazil",
+                    "nb_bets": 95,
+                    "nb_events": 11,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 1496,
+                "url": "/en_us/tennis/atp-doubles",
+                "url_type": "url_key",
+                "label": "ATP - Doubles",
+                "nb_bets": 33,
+                "nb_events": 12,
+                "menu": [
+                  {
+                    "id": 40756,
+                    "url": "/en_us/tennis/atp-doubles/madrid-spain-doubles",
+                    "url_type": "url_key",
+                    "label": "Madrid, Spain, Doubles",
+                    "nb_bets": 33,
+                    "nb_events": 12,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 1497,
+                "url": "/en_us/tennis/wta-doubles",
+                "url_type": "url_key",
+                "label": "WTA - Doubles",
+                "nb_bets": 7,
+                "nb_events": 2,
+                "menu": [
+                  {
+                    "id": 40743,
+                    "url": "/en_us/tennis/wta-doubles/madrid-spain-doubles-w",
+                    "url_type": "url_key",
+                    "label": "Madrid, Spain, Doubles (W)",
+                    "nb_bets": 7,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 2600,
+                "url": "/en_us/tennis/atp-challenger-doubles",
+                "url_type": "url_key",
+                "label": "ATP - Challenger - Doubles",
+                "nb_bets": 11,
+                "nb_events": 11,
+                "menu": [
+                  {
+                    "id": 57560,
+                    "url": "/en_us/tennis/atp-challenger-doubles/guangzhou-china-doubles",
+                    "url_type": "url_key",
+                    "label": "Guangzhou, China, Doubles",
+                    "nb_bets": 8,
+                    "nb_events": 8,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 60078,
+                    "url": "/en_us/tennis/atp-challenger-doubles/porto-alegre-brazil-doubles",
+                    "url_type": "url_key",
+                    "label": "Porto Alegre, Brazil, Doubles",
+                    "nb_bets": 3,
+                    "nb_events": 3,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 388,
+                "url": "/en_us/tennis/wta-125k",
+                "url_type": "url_key",
+                "label": "WTA 125K",
+                "nb_bets": 99,
+                "nb_events": 10,
+                "menu": [
+                  {
+                    "id": 49667,
+                    "url": "/en_us/tennis/wta-125k/saint-malo-france-w",
+                    "url_type": "url_key",
+                    "label": "Saint-Malo, France (W)",
+                    "nb_bets": 58,
+                    "nb_events": 6,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 62755,
+                    "url": "/en_us/tennis/wta-125k/vic-spain-w",
+                    "url_type": "url_key",
+                    "label": "Vic, Spain (W)",
+                    "nb_bets": 41,
+                    "nb_events": 4,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 2601,
+                "url": "/en_us/tennis/wta-125k-doubles",
+                "url_type": "url_key",
+                "label": "WTA 125K - Doubles",
+                "nb_bets": 10,
+                "nb_events": 7,
+                "menu": [
+                  {
+                    "id": 49685,
+                    "url": "/en_us/tennis/wta-125k-doubles/saint-malo-france-doubles-w",
+                    "url_type": "url_key",
+                    "label": "Saint-Malo, France, Doubles (W)",
+                    "nb_bets": 10,
+                    "nb_events": 7,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              }
+            ],
+            "identifier": "sport",
+            "type": null,
+            "provider": "sportx"
+          },
+          {
+            "id": 18,
+            "url": "/en_us/golf",
+            "url_type": "url_key",
+            "label": "Golf",
+            "icon": "golf",
+            "nb_bets": 7,
+            "nb_events": 7,
+            "menu": [
+              {
+                "id": 424,
+                "url": "/en_us/golf/international",
+                "url_type": "url_key",
+                "label": "International",
+                "nb_bets": 6,
+                "nb_events": 6,
+                "menu": [
+                  {
+                    "id": 47982,
+                    "url": "/en_us/golf/international/ryder-cup",
+                    "url_type": "url_key",
+                    "label": "Ryder Cup",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 53047,
+                    "url": "/en_us/golf/international/the-cj-cup",
+                    "url_type": "url_key",
+                    "label": "The CJ Cup",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 47979,
+                    "url": "/en_us/golf/international/the-open-championship",
+                    "url_type": "url_key",
+                    "label": "The Open Championship",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 47972,
+                    "url": "/en_us/golf/international/the-presidents-cup",
+                    "url_type": "url_key",
+                    "label": "The Presidents Cup",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 47988,
+                    "url": "/en_us/golf/international/us-masters",
+                    "url_type": "url_key",
+                    "label": "US Masters",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 47986,
+                    "url": "/en_us/golf/international/us-open",
+                    "url_type": "url_key",
+                    "label": "US Open",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 2411,
+                "url": "/en_us/golf/international-w",
+                "url_type": "url_key",
+                "label": "International (W)",
+                "nb_bets": 1,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 47992,
+                    "url": "/en_us/golf/international-w/solheim-cup",
+                    "url_type": "url_key",
+                    "label": "Solheim Cup",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              }
+            ],
+            "identifier": "sport",
+            "type": null,
+            "provider": "sportx"
+          },
+          {
+            "id": 13,
+            "url": "/en_us/soccer",
+            "url_type": "url_key",
+            "label": "Soccer",
+            "icon": "soccer",
+            "nb_bets": 18881,
+            "nb_events": 393,
+            "menu": [
+              {
+                "id": 3,
+                "url": "/en_us/soccer/united-states",
+                "url_type": "url_key",
+                "label": "United States",
+                "nb_bets": 1405,
+                "nb_events": 14,
+                "menu": [
+                  {
+                    "id": 5,
+                    "url": "/en_us/soccer/united-states/major-league-soccer",
+                    "url_type": "url_key",
+                    "label": "Major League Soccer",
+                    "nb_bets": 1405,
+                    "nb_events": 14,
+                    "identifier": "competition",
+                    "is_pinned": true
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 111,
+                "url": "/en_us/soccer/champions-league",
+                "url_type": "url_key",
+                "label": "Champions League",
+                "nb_bets": 254,
+                "nb_events": 4,
+                "menu": [
+                  {
+                    "id": 6674,
+                    "url": "/en_us/soccer/champions-league/champions-league",
+                    "url_type": "url_key",
+                    "label": "Champions League",
+                    "nb_bets": 254,
+                    "nb_events": 4,
+                    "identifier": "competition",
+                    "is_pinned": true
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 28,
+                "url": "/en_us/soccer/europa-league",
+                "url_type": "url_key",
+                "label": "Europa League",
+                "nb_bets": 237,
+                "nb_events": 3,
+                "menu": [
+                  {
+                    "id": 6675,
+                    "url": "/en_us/soccer/europa-league/europa-league",
+                    "url_type": "url_key",
+                    "label": "Europa League",
+                    "nb_bets": 237,
+                    "nb_events": 3,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 286,
+                "url": "/en_us/soccer/champions-league-w",
+                "url_type": "url_key",
+                "label": "Champions League (W)",
+                "nb_bets": 19,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 769,
+                    "url": "/en_us/soccer/champions-league-w/champions-league-w",
+                    "url_type": "url_key",
+                    "label": "Champions League (W)",
+                    "nb_bets": 19,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 84,
+                "url": "/en_us/soccer/argentina",
+                "url_type": "url_key",
+                "label": "Argentina",
+                "nb_bets": 1324,
+                "nb_events": 47,
+                "menu": [
+                  {
+                    "id": 43414,
+                    "url": "/en_us/soccer/argentina/argentina-reserves",
+                    "url_type": "url_key",
+                    "label": "Argentina - Reserves",
+                    "nb_bets": 85,
+                    "nb_events": 18,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 2530,
+                    "url": "/en_us/soccer/argentina/liga-profesional-argentina",
+                    "url_type": "url_key",
+                    "label": "Liga Profesional Argentina",
+                    "nb_bets": 866,
+                    "nb_events": 12,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 43411,
+                    "url": "/en_us/soccer/argentina/primera-nacional",
+                    "url_type": "url_key",
+                    "label": "Primera Nacional",
+                    "nb_bets": 373,
+                    "nb_events": 17,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 219,
+                "url": "/en_us/soccer/asia",
+                "url_type": "url_key",
+                "label": "Asia",
+                "nb_bets": 60,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 40458,
+                    "url": "/en_us/soccer/asia/afc-champions-league",
+                    "url_type": "url_key",
+                    "label": "AFC Champions League",
+                    "nb_bets": 60,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 313,
+                "url": "/en_us/soccer/australia",
+                "url_type": "url_key",
+                "label": "Australia",
+                "nb_bets": 528,
+                "nb_events": 5,
+                "menu": [
+                  {
+                    "id": 2169,
+                    "url": "/en_us/soccer/australia/a-league",
+                    "url_type": "url_key",
+                    "label": "A-League",
+                    "nb_bets": 528,
+                    "nb_events": 5,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 42,
+                "url": "/en_us/soccer/austria",
+                "url_type": "url_key",
+                "label": "Austria",
+                "nb_bets": 59,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 131,
+                    "url": "/en_us/soccer/austria/bundesliga",
+                    "url_type": "url_key",
+                    "label": "Bundesliga",
+                    "nb_bets": 59,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 51,
+                "url": "/en_us/soccer/belgium",
+                "url_type": "url_key",
+                "label": "Belgium",
+                "nb_bets": 952,
+                "nb_events": 9,
+                "menu": [
+                  {
+                    "id": 2080,
+                    "url": "/en_us/soccer/belgium/belgian-cup",
+                    "url_type": "url_key",
+                    "label": "Belgian Cup",
+                    "nb_bets": 101,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 101,
+                    "url": "/en_us/soccer/belgium/jupiler-league",
+                    "url_type": "url_key",
+                    "label": "Jupiler League",
+                    "nb_bets": 851,
+                    "nb_events": 8,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 171,
+                "url": "/en_us/soccer/bosnie",
+                "url_type": "url_key",
+                "label": "Bosnie",
+                "nb_bets": 12,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 919,
+                    "url": "/en_us/soccer/bosnie/premier-liga-bih",
+                    "url_type": "url_key",
+                    "label": "Premier Liga (BIH)",
+                    "nb_bets": 12,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 37,
+                "url": "/en_us/soccer/brazil",
+                "url_type": "url_key",
+                "label": "Brazil",
+                "nb_bets": 297,
+                "nb_events": 7,
+                "menu": [
+                  {
+                    "id": 2121,
+                    "url": "/en_us/soccer/brazil/brasileirao-serie-b",
+                    "url_type": "url_key",
+                    "label": "Brasileirão Série B",
+                    "nb_bets": 53,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 2081,
+                    "url": "/en_us/soccer/brazil/brazil-cup",
+                    "url_type": "url_key",
+                    "label": "Brazil Cup",
+                    "nb_bets": 174,
+                    "nb_events": 3,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 36186,
+                    "url": "/en_us/soccer/brazil/division-1-w",
+                    "url_type": "url_key",
+                    "label": "Division 1 (W)",
+                    "nb_bets": 21,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 37892,
+                    "url": "/en_us/soccer/brazil/brasileirao-serie-c",
+                    "url_type": "url_key",
+                    "label": "Brasileirão Série C",
+                    "nb_bets": 49,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 885,
+                "url": "/en_us/soccer/club-world-cup",
+                "url_type": "url_key",
+                "label": "Club World Cup",
+                "nb_bets": 84,
+                "nb_events": 58,
+                "menu": [
+                  {
+                    "id": 6543,
+                    "url": "/en_us/soccer/club-world-cup/club-world-cup",
+                    "url_type": "url_key",
+                    "label": "Club World Cup",
+                    "nb_bets": 84,
+                    "nb_events": 58,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 356,
+                "url": "/en_us/soccer/colombia",
+                "url_type": "url_key",
+                "label": "Colombia",
+                "nb_bets": 201,
+                "nb_events": 6,
+                "menu": [
+                  {
+                    "id": 43163,
+                    "url": "/en_us/soccer/colombia/liga-w",
+                    "url_type": "url_key",
+                    "label": "Liga (W)",
+                    "nb_bets": 42,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 6422,
+                    "url": "/en_us/soccer/colombia/primera-a",
+                    "url_type": "url_key",
+                    "label": "Primera A",
+                    "nb_bets": 90,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 2732,
+                    "url": "/en_us/soccer/colombia/primera-b",
+                    "url_type": "url_key",
+                    "label": "Primera B",
+                    "nb_bets": 69,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 11,
+                "url": "/en_us/soccer/denmark",
+                "url_type": "url_key",
+                "label": "Denmark",
+                "nb_bets": 61,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 130,
+                    "url": "/en_us/soccer/denmark/superligaen",
+                    "url_type": "url_key",
+                    "label": "Superligaen",
+                    "nb_bets": 61,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 309,
+                "url": "/en_us/soccer/ecuador",
+                "url_type": "url_key",
+                "label": "Ecuador",
+                "nb_bets": 57,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 36435,
+                    "url": "/en_us/soccer/ecuador/primera-a",
+                    "url_type": "url_key",
+                    "label": "Primera A",
+                    "nb_bets": 57,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 43,
+                "url": "/en_us/soccer/england",
+                "url_type": "url_key",
+                "label": "England",
+                "nb_bets": 1469,
+                "nb_events": 18,
+                "menu": [
+                  {
+                    "id": 202,
+                    "url": "/en_us/soccer/england/championship",
+                    "url_type": "url_key",
+                    "label": "Championship",
+                    "nb_bets": 123,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 442,
+                    "url": "/en_us/soccer/england/fa-cup",
+                    "url_type": "url_key",
+                    "label": "FA Cup",
+                    "nb_bets": 101,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 1288,
+                    "url": "/en_us/soccer/england/league-one",
+                    "url_type": "url_key",
+                    "label": "League One",
+                    "nb_bets": 177,
+                    "nb_events": 3,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 94,
+                    "url": "/en_us/soccer/england/premier-league",
+                    "url_type": "url_key",
+                    "label": "Premier League",
+                    "nb_bets": 1026,
+                    "nb_events": 11,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 44336,
+                    "url": "/en_us/soccer/england/premier-league-2",
+                    "url_type": "url_key",
+                    "label": "Premier League 2",
+                    "nb_bets": 42,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 1569,
+                "url": "/en_us/soccer/conference-league",
+                "url_type": "url_key",
+                "label": "Conference League",
+                "nb_bets": 237,
+                "nb_events": 3,
+                "menu": [
+                  {
+                    "id": 42958,
+                    "url": "/en_us/soccer/conference-league/conference-league",
+                    "url_type": "url_key",
+                    "label": "Conference League",
+                    "nb_bets": 237,
+                    "nb_events": 3,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 44,
+                "url": "/en_us/soccer/france",
+                "url_type": "url_key",
+                "label": "France",
+                "nb_bets": 1854,
+                "nb_events": 24,
+                "menu": [
+                  {
+                    "id": 555,
+                    "url": "/en_us/soccer/france/french-cup",
+                    "url_type": "url_key",
+                    "label": "French Cup",
+                    "nb_bets": 2,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 96,
+                    "url": "/en_us/soccer/france/ligue-1-mcdonald-stm",
+                    "url_type": "url_key",
+                    "label": "Ligue 1 McDonald's™",
+                    "nb_bets": 1030,
+                    "nb_events": 13,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 97,
+                    "url": "/en_us/soccer/france/ligue-2",
+                    "url_type": "url_key",
+                    "label": "Ligue 2",
+                    "nb_bets": 822,
+                    "nb_events": 10,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 395,
+                "url": "/en_us/soccer/georgia",
+                "url_type": "url_key",
+                "label": "Georgia",
+                "nb_bets": 71,
+                "nb_events": 3,
+                "menu": [
+                  {
+                    "id": 36684,
+                    "url": "/en_us/soccer/georgia/erovnuli-liga",
+                    "url_type": "url_key",
+                    "label": "Erovnuli Liga",
+                    "nb_bets": 71,
+                    "nb_events": 3,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 39,
+                "url": "/en_us/soccer/germany",
+                "url_type": "url_key",
+                "label": "Germany",
+                "nb_bets": 1291,
+                "nb_events": 14,
+                "menu": [
+                  {
+                    "id": 268,
+                    "url": "/en_us/soccer/germany/bundesliga",
+                    "url_type": "url_key",
+                    "label": "Bundesliga",
+                    "nb_bets": 1068,
+                    "nb_events": 11,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 267,
+                    "url": "/en_us/soccer/germany/bundesliga-2",
+                    "url_type": "url_key",
+                    "label": "Bundesliga 2",
+                    "nb_bets": 121,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 201,
+                    "url": "/en_us/soccer/germany/dfb-pokal",
+                    "url_type": "url_key",
+                    "label": "DFB Pokal",
+                    "nb_bets": 102,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 142,
+                "url": "/en_us/soccer/iceland",
+                "url_type": "url_key",
+                "label": "Iceland",
+                "nb_bets": 172,
+                "nb_events": 3,
+                "menu": [
+                  {
+                    "id": 37576,
+                    "url": "/en_us/soccer/iceland/urvalsdeild",
+                    "url_type": "url_key",
+                    "label": "Urvalsdeild",
+                    "nb_bets": 172,
+                    "nb_events": 3,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 320,
+                "url": "/en_us/soccer/india",
+                "url_type": "url_key",
+                "label": "India",
+                "nb_bets": 28,
+                "nb_events": 2,
+                "menu": [
+                  {
+                    "id": 49200,
+                    "url": "/en_us/soccer/india/super-cup",
+                    "url_type": "url_key",
+                    "label": "Super Cup",
+                    "nb_bets": 28,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 18,
+                "url": "/en_us/soccer/italy",
+                "url_type": "url_key",
+                "label": "Italy",
+                "nb_bets": 1475,
+                "nb_events": 21,
+                "menu": [
+                  {
+                    "id": 263,
+                    "url": "/en_us/soccer/italy/italy-cup",
+                    "url_type": "url_key",
+                    "label": "Italy Cup",
+                    "nb_bets": 93,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 305,
+                    "url": "/en_us/soccer/italy/serie-a",
+                    "url_type": "url_key",
+                    "label": "Serie A",
+                    "nb_bets": 786,
+                    "nb_events": 9,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 604,
+                    "url": "/en_us/soccer/italy/serie-b",
+                    "url_type": "url_key",
+                    "label": "Serie B",
+                    "nb_bets": 596,
+                    "nb_events": 10,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 140,
+                "url": "/en_us/soccer/japan",
+                "url_type": "url_key",
+                "label": "Japan",
+                "nb_bets": 885,
+                "nb_events": 8,
+                "menu": [
+                  {
+                    "id": 771,
+                    "url": "/en_us/soccer/japan/j-league",
+                    "url_type": "url_key",
+                    "label": "J-League",
+                    "nb_bets": 885,
+                    "nb_events": 8,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 147,
+                "url": "/en_us/soccer/latvia",
+                "url_type": "url_key",
+                "label": "Latvia",
+                "nb_bets": 52,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 793,
+                    "url": "/en_us/soccer/latvia/virsliga",
+                    "url_type": "url_key",
+                    "label": "Virsliga",
+                    "nb_bets": 52,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 960,
+                "url": "/en_us/soccer/nations-league",
+                "url_type": "url_key",
+                "label": "Nations League",
+                "nb_bets": 22,
+                "nb_events": 3,
+                "menu": [
+                  {
+                    "id": 36789,
+                    "url": "/en_us/soccer/nations-league/nations-league",
+                    "url_type": "url_key",
+                    "label": "Nations League",
+                    "nb_bets": 22,
+                    "nb_events": 3,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 45,
+                "url": "/en_us/soccer/netherlands",
+                "url_type": "url_key",
+                "label": "Netherlands",
+                "nb_bets": 1,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 102,
+                    "url": "/en_us/soccer/netherlands/eredivisie",
+                    "url_type": "url_key",
+                    "label": "Eredivisie",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 314,
+                "url": "/en_us/soccer/north-and-central-america",
+                "url_type": "url_key",
+                "label": "North and Central America",
+                "nb_bets": 176,
+                "nb_events": 2,
+                "menu": [
+                  {
+                    "id": 36365,
+                    "url": "/en_us/soccer/north-and-central-america/concacaf-champions-league",
+                    "url_type": "url_key",
+                    "label": "CONCACAF Champions League",
+                    "nb_bets": 176,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 14,
+                "url": "/en_us/soccer/norway",
+                "url_type": "url_key",
+                "label": "Norway",
+                "nb_bets": 238,
+                "nb_events": 4,
+                "menu": [
+                  {
+                    "id": 63,
+                    "url": "/en_us/soccer/norway/eliteserien",
+                    "url_type": "url_key",
+                    "label": "Eliteserien",
+                    "nb_bets": 238,
+                    "nb_events": 4,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 305,
+                "url": "/en_us/soccer/paraguay",
+                "url_type": "url_key",
+                "label": "Paraguay",
+                "nb_bets": 114,
+                "nb_events": 2,
+                "menu": [
+                  {
+                    "id": 2610,
+                    "url": "/en_us/soccer/paraguay/primera-division",
+                    "url_type": "url_key",
+                    "label": "Primera Division",
+                    "nb_bets": 114,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 306,
+                "url": "/en_us/soccer/peru",
+                "url_type": "url_key",
+                "label": "Peru",
+                "nb_bets": 113,
+                "nb_events": 2,
+                "menu": [
+                  {
+                    "id": 36178,
+                    "url": "/en_us/soccer/peru/primera-division",
+                    "url_type": "url_key",
+                    "label": "Primera Division",
+                    "nb_bets": 113,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 46,
+                "url": "/en_us/soccer/portugal",
+                "url_type": "url_key",
+                "label": "Portugal",
+                "nb_bets": 965,
+                "nb_events": 11,
+                "menu": [
+                  {
+                    "id": 154,
+                    "url": "/en_us/soccer/portugal/primeira-liga",
+                    "url_type": "url_key",
+                    "label": "Primeira Liga",
+                    "nb_bets": 667,
+                    "nb_events": 7,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 307,
+                    "url": "/en_us/soccer/portugal/segunda-liga",
+                    "url_type": "url_key",
+                    "label": "Segunda Liga",
+                    "nb_bets": 298,
+                    "nb_events": 4,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 134,
+                "url": "/en_us/soccer/romania",
+                "url_type": "url_key",
+                "label": "Romania",
+                "nb_bets": 59,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 686,
+                    "url": "/en_us/soccer/romania/liga-1",
+                    "url_type": "url_key",
+                    "label": "Liga 1",
+                    "nb_bets": 59,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 443,
+                "url": "/en_us/soccer/saudi-arabia",
+                "url_type": "url_key",
+                "label": "Saudi Arabia",
+                "nb_bets": 22,
+                "nb_events": 2,
+                "menu": [
+                  {
+                    "id": 35248,
+                    "url": "/en_us/soccer/saudi-arabia/division-1",
+                    "url_type": "url_key",
+                    "label": "Division 1",
+                    "nb_bets": 21,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 3758,
+                    "url": "/en_us/soccer/saudi-arabia/saudi-pro-league",
+                    "url_type": "url_key",
+                    "label": "Saudi Pro League",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 141,
+                "url": "/en_us/soccer/south-america",
+                "url_type": "url_key",
+                "label": "South America",
+                "nb_bets": 1747,
+                "nb_events": 33,
+                "menu": [
+                  {
+                    "id": 36146,
+                    "url": "/en_us/soccer/south-america/copa-libertadores",
+                    "url_type": "url_key",
+                    "label": "Copa Libertadores",
+                    "nb_bets": 1065,
+                    "nb_events": 16,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 36148,
+                    "url": "/en_us/soccer/south-america/copa-sudamericana",
+                    "url_type": "url_key",
+                    "label": "Copa Sudamericana",
+                    "nb_bets": 682,
+                    "nb_events": 17,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 15,
+                "url": "/en_us/soccer/spain",
+                "url_type": "url_key",
+                "label": "Spain",
+                "nb_bets": 1986,
+                "nb_events": 23,
+                "menu": [
+                  {
+                    "id": 306,
+                    "url": "/en_us/soccer/spain/laliga",
+                    "url_type": "url_key",
+                    "label": "LaLiga",
+                    "nb_bets": 1018,
+                    "nb_events": 13,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 18,
+                    "url": "/en_us/soccer/spain/laliga2",
+                    "url_type": "url_key",
+                    "label": "LaLiga2",
+                    "nb_bets": 968,
+                    "nb_events": 10,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 9,
+                "url": "/en_us/soccer/sweden",
+                "url_type": "url_key",
+                "label": "Sweden",
+                "nb_bets": 156,
+                "nb_events": 2,
+                "menu": [
+                  {
+                    "id": 99,
+                    "url": "/en_us/soccer/sweden/allsvenskan",
+                    "url_type": "url_key",
+                    "label": "Allsvenskan",
+                    "nb_bets": 97,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 36479,
+                    "url": "/en_us/soccer/sweden/superettan",
+                    "url_type": "url_key",
+                    "label": "Superettan",
+                    "nb_bets": 59,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 53,
+                "url": "/en_us/soccer/turkey",
+                "url_type": "url_key",
+                "label": "Turkey",
+                "nb_bets": 76,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 254,
+                    "url": "/en_us/soccer/turkey/super-lig",
+                    "url_type": "url_key",
+                    "label": "Süper Lig",
+                    "nb_bets": 76,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 316,
+                "url": "/en_us/soccer/uruguay",
+                "url_type": "url_key",
+                "label": "Uruguay",
+                "nb_bets": 33,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 36215,
+                    "url": "/en_us/soccer/uruguay/primera-division",
+                    "url_type": "url_key",
+                    "label": "Primera División",
+                    "nb_bets": 33,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 612,
+                "url": "/en_us/soccer/world-cup",
+                "url_type": "url_key",
+                "label": "World Cup",
+                "nb_bets": 87,
+                "nb_events": 47,
+                "menu": [
+                  {
+                    "id": 55322,
+                    "url": "/en_us/soccer/world-cup/world-cup",
+                    "url_type": "url_key",
+                    "label": "World Cup",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 44708,
+                    "url": "/en_us/soccer/world-cup/world-cup-qualification-uefa",
+                    "url_type": "url_key",
+                    "label": "World Cup Qualification, UEFA",
+                    "nb_bets": 86,
+                    "nb_events": 46,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 1229,
+                "url": "/en_us/soccer/africa-cup-of-nations",
+                "url_type": "url_key",
+                "label": "Africa Cup of Nations",
+                "nb_bets": 1,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 1487,
+                    "url": "/en_us/soccer/africa-cup-of-nations/africa-cup-of-nations",
+                    "url_type": "url_key",
+                    "label": "Africa Cup of Nations",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 771,
+                "url": "/en_us/soccer/euro-w",
+                "url_type": "url_key",
+                "label": "Euro (W)",
+                "nb_bets": 1,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 62044,
+                    "url": "/en_us/soccer/euro-w/euro-2025-w",
+                    "url_type": "url_key",
+                    "label": "Euro 2025 (W)",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              }
+            ],
+            "identifier": "sport",
+            "type": null,
+            "provider": "sportx"
+          },
+          {
+            "id": 78,
+            "url": "/en_us/mma",
+            "url_type": "url_key",
+            "label": "MMA",
+            "icon": "mma",
+            "nb_bets": 38,
+            "nb_events": 38,
+            "menu": [
+              {
+                "id": 1188,
+                "url": "/en_us/mma/ufc",
+                "url_type": "url_key",
+                "label": "UFC",
+                "nb_bets": 38,
+                "nb_events": 38,
+                "menu": [
+                  {
+                    "id": 40004,
+                    "url": "/en_us/mma/ufc/fights",
+                    "url_type": "url_key",
+                    "label": "Fights",
+                    "nb_bets": 38,
+                    "nb_events": 38,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              }
+            ],
+            "identifier": "sport",
+            "type": null,
+            "provider": "sportx"
+          },
+          {
+            "id": 7,
+            "url": "/en_us/american-football",
+            "url_type": "url_key",
+            "label": "American Football",
+            "icon": "foot-us",
+            "nb_bets": 2,
+            "nb_events": 2,
+            "menu": [
+              {
+                "id": 56,
+                "url": "/en_us/american-football/united-states",
+                "url_type": "url_key",
+                "label": "United States",
+                "nb_bets": 1,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 341,
+                    "url": "/en_us/american-football/united-states/nfl",
+                    "url_type": "url_key",
+                    "label": "NFL",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": true
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 347,
+                "url": "/en_us/american-football/canada",
+                "url_type": "url_key",
+                "label": "Canada",
+                "nb_bets": 1,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 2521,
+                    "url": "/en_us/american-football/canada/cfl",
+                    "url_type": "url_key",
+                    "label": "CFL",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              }
+            ],
+            "identifier": "sport",
+            "type": null,
+            "provider": "sportx"
+          },
+          {
+            "id": 19,
+            "url": "/en_us/motor-sport",
+            "url_type": "url_key",
+            "label": "Motor Sport",
+            "icon": "automoto",
+            "nb_bets": 6,
+            "nb_events": 6,
+            "menu": [
+              {
+                "id": 1575,
+                "url": "/en_us/motor-sport/formula-1",
+                "url_type": "url_key",
+                "label": "Formula 1",
+                "nb_bets": 4,
+                "nb_events": 4,
+                "menu": [
+                  {
+                    "id": 42712,
+                    "url": "/en_us/motor-sport/formula-1/formula-1-world-championship",
+                    "url_type": "url_key",
+                    "label": "Formula 1 World Championship",
+                    "nb_bets": 4,
+                    "nb_events": 4,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 762,
+                "url": "/en_us/motor-sport/indycar",
+                "url_type": "url_key",
+                "label": "Indycar",
+                "nb_bets": 1,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 32791,
+                    "url": "/en_us/motor-sport/indycar/season",
+                    "url_type": "url_key",
+                    "label": "Season",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 434,
+                "url": "/en_us/motor-sport/nascar",
+                "url_type": "url_key",
+                "label": "Nascar",
+                "nb_bets": 1,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 28640,
+                    "url": "/en_us/motor-sport/nascar/truck-series",
+                    "url_type": "url_key",
+                    "label": "Truck Series",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              }
+            ],
+            "identifier": "sport",
+            "type": null,
+            "provider": "sportx"
+          },
+          {
+            "id": 44,
+            "url": "/en_us/cricket",
+            "url_type": "url_key",
+            "label": "Cricket",
+            "icon": "cricket",
+            "nb_bets": 1,
+            "nb_events": 1,
+            "menu": [
+              {
+                "id": 470,
+                "url": "/en_us/cricket/international",
+                "url_type": "url_key",
+                "label": "International",
+                "nb_bets": 1,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 40642,
+                    "url": "/en_us/cricket/international/t20l-series",
+                    "url_type": "url_key",
+                    "label": "T20l Series",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              }
+            ],
+            "identifier": "sport",
+            "type": null,
+            "provider": "sportx"
+          },
+          {
+            "id": 89,
+            "url": "/en_us/lacrosse",
+            "url_type": "url_key",
+            "label": "Lacrosse",
+            "icon": "lacrosse",
+            "nb_bets": 6,
+            "nb_events": 2,
+            "menu": [
+              {
+                "id": 2923,
+                "url": "/en_us/lacrosse/united-states",
+                "url_type": "url_key",
+                "label": "United States",
+                "nb_bets": 6,
+                "nb_events": 2,
+                "menu": [
+                  {
+                    "id": 61932,
+                    "url": "/en_us/lacrosse/united-states/ncaa",
+                    "url_type": "url_key",
+                    "label": "NCAA",
+                    "nb_bets": 6,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              }
+            ],
+            "identifier": "sport",
+            "type": null,
+            "provider": "sportx"
+          },
+          {
+            "id": 1,
+            "url": "/en_us/aussie-rules",
+            "url_type": "url_key",
+            "label": "Aussie Rules",
+            "icon": "aussie-rules",
+            "nb_bets": 12,
+            "nb_events": 12,
+            "menu": [
+              {
+                "id": 431,
+                "url": "/en_us/aussie-rules/australia",
+                "url_type": "url_key",
+                "label": "Australia",
+                "nb_bets": 12,
+                "nb_events": 12,
+                "menu": [
+                  {
+                    "id": 36596,
+                    "url": "/en_us/aussie-rules/australia/afl",
+                    "url_type": "url_key",
+                    "label": "AFL",
+                    "nb_bets": 12,
+                    "nb_events": 12,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              }
+            ],
+            "identifier": "sport",
+            "type": null,
+            "provider": "sportx"
+          },
+          {
+            "id": 63,
+            "url": "/en_us/biathlon",
+            "url_type": "url_key",
+            "label": "Biathlon",
+            "icon": "sporthiver",
+            "nb_bets": 2,
+            "nb_events": 2,
+            "menu": [
+              {
+                "id": 844,
+                "url": "/en_us/biathlon/world-cup",
+                "url_type": "url_key",
+                "label": "World Cup",
+                "nb_bets": 1,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 37036,
+                    "url": "/en_us/biathlon/world-cup/season",
+                    "url_type": "url_key",
+                    "label": "Season",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 845,
+                "url": "/en_us/biathlon/world-cup-w",
+                "url_type": "url_key",
+                "label": "World Cup (W)",
+                "nb_bets": 1,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 36875,
+                    "url": "/en_us/biathlon/world-cup-w/season",
+                    "url_type": "url_key",
+                    "label": "Season",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              }
+            ],
+            "identifier": "sport",
+            "type": null,
+            "provider": "sportx"
+          },
+          {
+            "id": 16,
+            "url": "/en_us/cycling",
+            "url_type": "url_key",
+            "label": "Cycling",
+            "icon": "cyclisme",
+            "nb_bets": 5,
+            "nb_events": 5,
+            "menu": [
+              {
+                "id": 1470,
+                "url": "/en_us/cycling/world",
+                "url_type": "url_key",
+                "label": "World",
+                "nb_bets": 5,
+                "nb_events": 5,
+                "menu": [
+                  {
+                    "id": 45734,
+                    "url": "/en_us/cycling/world/giro-d-italia",
+                    "url_type": "url_key",
+                    "label": "Giro d'Italia",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 45732,
+                    "url": "/en_us/cycling/world/tour-de-france",
+                    "url_type": "url_key",
+                    "label": "Tour de France",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 38537,
+                    "url": "/en_us/cycling/world/tour-de-france-w",
+                    "url_type": "url_key",
+                    "label": "Tour de France (W)",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 40684,
+                    "url": "/en_us/cycling/world/tour-de-romandie",
+                    "url_type": "url_key",
+                    "label": "Tour de Romandie",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 40685,
+                    "url": "/en_us/cycling/world/tour-de-romandie-stage",
+                    "url_type": "url_key",
+                    "label": "Tour de Romandie - Stage",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              }
+            ],
+            "identifier": "sport",
+            "type": null,
+            "provider": "sportx"
+          },
+          {
+            "id": 17,
+            "url": "/en_us/darts",
+            "url_type": "url_key",
+            "label": "Darts",
+            "icon": "flechette",
+            "nb_bets": 15,
+            "nb_events": 15,
+            "menu": [
+              {
+                "id": 360,
+                "url": "/en_us/darts/international",
+                "url_type": "url_key",
+                "label": "International",
+                "nb_bets": 15,
+                "nb_events": 15,
+                "menu": [
+                  {
+                    "id": 40093,
+                    "url": "/en_us/darts/international/modus-darts-online-live-league",
+                    "url_type": "url_key",
+                    "label": "Modus Darts Online Live League",
+                    "nb_bets": 15,
+                    "nb_events": 15,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              }
+            ],
+            "identifier": "sport",
+            "type": null,
+            "provider": "sportx"
+          },
+          {
+            "id": 8,
+            "url": "/en_us/futsal",
+            "url_type": "url_key",
+            "label": "Futsal",
+            "icon": "futsal",
+            "nb_bets": 17,
+            "nb_events": 4,
+            "menu": [
+              {
+                "id": 436,
+                "url": "/en_us/futsal/brazil",
+                "url_type": "url_key",
+                "label": "Brazil",
+                "nb_bets": 10,
+                "nb_events": 2,
+                "menu": [
+                  {
+                    "id": 49110,
+                    "url": "/en_us/futsal/brazil/liga-futsal",
+                    "url_type": "url_key",
+                    "label": "Liga Futsal",
+                    "nb_bets": 10,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 1533,
+                "url": "/en_us/futsal/hungary",
+                "url_type": "url_key",
+                "label": "Hungary",
+                "nb_bets": 7,
+                "nb_events": 2,
+                "menu": [
+                  {
+                    "id": 51992,
+                    "url": "/en_us/futsal/hungary/nb-i",
+                    "url_type": "url_key",
+                    "label": "NB I",
+                    "nb_bets": 7,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              }
+            ],
+            "identifier": "sport",
+            "type": null,
+            "provider": "sportx"
+          },
+          {
+            "id": 9,
+            "url": "/en_us/handball",
+            "url_type": "url_key",
+            "label": "Handball",
+            "icon": "handball",
+            "nb_bets": 275,
+            "nb_events": 11,
+            "menu": [
+              {
+                "id": 115,
+                "url": "/en_us/handball/european-cups",
+                "url_type": "url_key",
+                "label": "European Cups",
+                "nb_bets": 208,
+                "nb_events": 8,
+                "menu": [
+                  {
+                    "id": 445,
+                    "url": "/en_us/handball/european-cups/champions-league",
+                    "url_type": "url_key",
+                    "label": "Champions League",
+                    "nb_bets": 168,
+                    "nb_events": 4,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 6956,
+                    "url": "/en_us/handball/european-cups/ehf-european-league",
+                    "url_type": "url_key",
+                    "label": "EHF European League",
+                    "nb_bets": 40,
+                    "nb_events": 4,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 16,
+                "url": "/en_us/handball/germany",
+                "url_type": "url_key",
+                "label": "Germany",
+                "nb_bets": 6,
+                "nb_events": 2,
+                "menu": [
+                  {
+                    "id": 19,
+                    "url": "/en_us/handball/germany/bundesliga",
+                    "url_type": "url_key",
+                    "label": "Bundesliga",
+                    "nb_bets": 6,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 716,
+                "url": "/en_us/handball/iceland",
+                "url_type": "url_key",
+                "label": "Iceland",
+                "nb_bets": 61,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 45240,
+                    "url": "/en_us/handball/iceland/urvalsdeild",
+                    "url_type": "url_key",
+                    "label": "Urvalsdeild",
+                    "nb_bets": 61,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              }
+            ],
+            "identifier": "sport",
+            "type": null,
+            "provider": "sportx"
+          },
+          {
+            "id": 38,
+            "url": "/en_us/rugby-league",
+            "url_type": "url_key",
+            "label": "Rugby League",
+            "icon": "rugby13",
+            "nb_bets": 185,
+            "nb_events": 14,
+            "menu": [
+              {
+                "id": 229,
+                "url": "/en_us/rugby-league/europe",
+                "url_type": "url_key",
+                "label": "Europe",
+                "nb_bets": 13,
+                "nb_events": 5,
+                "menu": [
+                  {
+                    "id": 1349,
+                    "url": "/en_us/rugby-league/europe/super-league",
+                    "url_type": "url_key",
+                    "label": "Super League",
+                    "nb_bets": 13,
+                    "nb_events": 5,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 240,
+                "url": "/en_us/rugby-league/southern-hemisphere",
+                "url_type": "url_key",
+                "label": "Southern Hemisphere",
+                "nb_bets": 172,
+                "nb_events": 9,
+                "menu": [
+                  {
+                    "id": 43035,
+                    "url": "/en_us/rugby-league/southern-hemisphere/nrl",
+                    "url_type": "url_key",
+                    "label": "NRL",
+                    "nb_bets": 172,
+                    "nb_events": 9,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              }
+            ],
+            "identifier": "sport",
+            "type": null,
+            "provider": "sportx"
+          },
+          {
+            "id": 12,
+            "url": "/en_us/rugby-union",
+            "url_type": "url_key",
+            "label": "Rugby Union",
+            "icon": "rugby",
+            "nb_bets": 28,
+            "nb_events": 9,
+            "menu": [
+              {
+                "id": 83,
+                "url": "/en_us/rugby-union/champions-cup",
+                "url_type": "url_key",
+                "label": "Champions Cup",
+                "nb_bets": 22,
+                "nb_events": 3,
+                "menu": [
+                  {
+                    "id": 136,
+                    "url": "/en_us/rugby-union/champions-cup/champions-cup",
+                    "url_type": "url_key",
+                    "label": "Champions Cup",
+                    "nb_bets": 22,
+                    "nb_events": 3,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 143,
+                "url": "/en_us/rugby-union/world-cup",
+                "url_type": "url_key",
+                "label": "World Cup",
+                "nb_bets": 1,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 36029,
+                    "url": "/en_us/rugby-union/world-cup/world-cup",
+                    "url_type": "url_key",
+                    "label": "World Cup",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 81,
+                "url": "/en_us/rugby-union/france",
+                "url_type": "url_key",
+                "label": "France",
+                "nb_bets": 4,
+                "nb_events": 4,
+                "menu": [
+                  {
+                    "id": 297,
+                    "url": "/en_us/rugby-union/france/pro-d2",
+                    "url_type": "url_key",
+                    "label": "Pro D2",
+                    "nb_bets": 2,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  },
+                  {
+                    "id": 266,
+                    "url": "/en_us/rugby-union/france/top-14",
+                    "url_type": "url_key",
+                    "label": "Top 14",
+                    "nb_bets": 2,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 493,
+                "url": "/en_us/rugby-union/six-nations",
+                "url_type": "url_key",
+                "label": "Six Nations",
+                "nb_bets": 1,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 6857,
+                    "url": "/en_us/rugby-union/six-nations/six-nations",
+                    "url_type": "url_key",
+                    "label": "Six Nations",
+                    "nb_bets": 1,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              }
+            ],
+            "identifier": "sport",
+            "type": null,
+            "provider": "sportx"
+          },
+          {
+            "id": 20,
+            "url": "/en_us/snooker",
+            "url_type": "url_key",
+            "label": "Snooker",
+            "icon": "snooker",
+            "nb_bets": 36,
+            "nb_events": 2,
+            "menu": [
+              {
+                "id": 323,
+                "url": "/en_us/snooker/international",
+                "url_type": "url_key",
+                "label": "International",
+                "nb_bets": 36,
+                "nb_events": 2,
+                "menu": [
+                  {
+                    "id": 35935,
+                    "url": "/en_us/snooker/international/world-championship",
+                    "url_type": "url_key",
+                    "label": "World Championship",
+                    "nb_bets": 36,
+                    "nb_events": 2,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              }
+            ],
+            "identifier": "sport",
+            "type": null,
+            "provider": "sportx"
+          },
+          {
+            "id": 14,
+            "url": "/en_us/volleyball",
+            "url_type": "url_key",
+            "label": "Volleyball",
+            "icon": "volleyball",
+            "nb_bets": 28,
+            "nb_events": 2,
+            "menu": [
+              {
+                "id": 118,
+                "url": "/en_us/volleyball/italy",
+                "url_type": "url_key",
+                "label": "Italy",
+                "nb_bets": 22,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 484,
+                    "url": "/en_us/volleyball/italy/superlega",
+                    "url_type": "url_key",
+                    "label": "SuperLega",
+                    "nb_bets": 22,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              },
+              {
+                "id": 2244,
+                "url": "/en_us/volleyball/poland",
+                "url_type": "url_key",
+                "label": "Poland",
+                "nb_bets": 6,
+                "nb_events": 1,
+                "menu": [
+                  {
+                    "id": 52876,
+                    "url": "/en_us/volleyball/poland/league-1",
+                    "url_type": "url_key",
+                    "label": "League 1",
+                    "nb_bets": 6,
+                    "nb_events": 1,
+                    "identifier": "competition",
+                    "is_pinned": false
+                  }
+                ],
+                "identifier": "category"
+              }
+            ],
+            "identifier": "sport",
+            "type": null,
+            "provider": "sportx"
+          }
+        ]
+      },
+      "execution_time": "0.0000059605"
+    },
+    {
+      "tree_compo_key": "header",
+      "ttl": 180,
+      "data": {
+        "isSportncoPam": null,
+        "logo": {
+          "url": "/",
+          "title": "Home"
+        },
+        "anj_banners": {
+          "mobile": "/img/anj/Image-20201224-145153.png",
+          "desktop": "/img/anj/Image-20201224-145138.png"
+        }
+      },
+      "execution_time": "0.0000779629"
+    },
+    {
+      "tree_compo_key": "prematch_event_list",
+      "ttl": 180,
+      "data": {
+        "events": [
+          {
+            "ts_creation": 1745065771,
+            "is_canceled": false,
+            "is_cashoutable": true,
+            "ts_start": 1745883000,
+            "type": "pm",
+            "state": "pm",
+            "event_live_id": 9379548,
+            "nb_bets": 208,
+            "match_id": "12139372",
+            "actors": [
+              {
+                "id": 555464,
+                "type": "home",
+                "label": "Cavaliers",
+                "abrev": "Cavaliers"
+              },
+              {
+                "id": 551772,
+                "type": "away",
+                "label": "Heat",
+                "abrev": "Heat"
+              }
+            ],
+            "markets": [
+              {
+                "order": 1,
+                "selection_order_type": "moneyline",
+                "is_cashoutable": true,
+                "nb_selection_by_line": 2,
+                "bets": [
+                  {
+                    "label": "Moneyline",
+                    "selections": [
+                      {
+                        "id": 5451285767,
+                        "odds": 1.23,
+                        "odds_display": "-435",
+                        "label": "Cavaliers",
+                        "abrev": "Cavaliers"
+                      },
+                      {
+                        "id": 5451285768,
+                        "odds": 4.2,
+                        "odds_display": "+320",
+                        "label": "Heat",
+                        "abrev": "Heat"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "order": 200,
+                "selection_order_type": "handicap_2ways",
+                "is_cashoutable": false,
+                "nb_selection_by_line": 2,
+                "group": "Spread",
+                "see_more": 3,
+                "bets": [
+                  {
+                    "label": "Spread (8.5) - Result (inc overtime)",
+                    "selections": [
+                      {
+                        "id": 5451289106,
+                        "odds": 1.83,
+                        "odds_display": "-120",
+                        "label": "Cavaliers (-8.5)",
+                        "abrev": "Cavaliers (-8.5)"
+                      },
+                      {
+                        "id": 5451289107,
+                        "odds": 1.98,
+                        "odds_display": "-102",
+                        "label": "Heat (+8.5)",
+                        "abrev": "Heat (+8.5)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "order": 300,
+                "selection_order_type": "over_under",
+                "is_cashoutable": true,
+                "nb_selection_by_line": 2,
+                "group": "Total",
+                "see_more": 3,
+                "bets": [
+                  {
+                    "label": "Over/Under 211.5 points (inc overtime)",
+                    "selections": [
+                      {
+                        "id": 5451292183,
+                        "odds": 1.9,
+                        "odds_display": "-111",
+                        "label": "Over 211.5",
+                        "abrev": "Over"
+                      },
+                      {
+                        "id": 5451292184,
+                        "odds": 1.9,
+                        "odds_display": "-111",
+                        "label": "Under 211.5",
+                        "abrev": "Under"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "bet_builder_id": 451350,
+            "id": 9337892,
+            "label": "Cavaliers / Heat",
+            "sport": {
+              "id": 4,
+              "label": "Basketball",
+              "icon": "basketball",
+              "url": "/en_us/basketball"
+            },
+            "category": {
+              "id": 7,
+              "label": "United States",
+              "url": "/en_us/basketball/united-states"
+            },
+            "competition": {
+              "id": 206,
+              "label": "NBA",
+              "display_mode": "at",
+              "url": "/en_us/basketball/united-states/nba"
+            },
+            "start": "2025-04-29T01:30:00.000+02:00",
+            "creation": "2025-04-19T14:29:31.000+02:00",
+            "url": "/en_us/evenement/9337892-cavaliers-heat",
+            "betbuilder": {
+              "name": "Same Game Parlay",
+              "description": "Build your SGP now!",
+              "icon": "/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "icon_alt": "/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "icon_url": "https://sportsbook.crabsports.com/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "icon_alt_url": "https://sportsbook.crabsports.com/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "button_description": "Build now!",
+              "url": "https://public-prod-gen2.sportcastlive.com?key=0469dbaf-4766-4e05-810c-32a08d86daea&fixtureId=451350&brand=crabsport&odds=AmericanPrice&culture=en-US&region=maryland&pos=rev",
+              "id": 451350
+            },
+            "filter_ids": [
+              4
+            ]
+          },
+          {
+            "ts_creation": 1744807832,
+            "is_canceled": false,
+            "is_cashoutable": true,
+            "ts_start": 1745892000,
+            "type": "pm",
+            "state": "pm",
+            "event_live_id": 9384365,
+            "nb_bets": 140,
+            "match_id": "12115702",
+            "actors": [
+              {
+                "id": 555454,
+                "type": "home",
+                "label": "Rockets",
+                "abrev": "Rockets"
+              },
+              {
+                "id": 555451,
+                "type": "away",
+                "label": "Warriors",
+                "abrev": "Warriors"
+              }
+            ],
+            "markets": [
+              {
+                "order": 1,
+                "selection_order_type": "moneyline",
+                "is_cashoutable": true,
+                "nb_selection_by_line": 2,
+                "bets": [
+                  {
+                    "label": "Moneyline",
+                    "selections": [
+                      {
+                        "id": 5451249740,
+                        "odds": 2.47,
+                        "odds_display": "+147",
+                        "label": "Rockets",
+                        "abrev": "Rockets"
+                      },
+                      {
+                        "id": 5451249741,
+                        "odds": 1.53,
+                        "odds_display": "-189",
+                        "label": "Warriors",
+                        "abrev": "Warriors"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "order": 200,
+                "selection_order_type": "handicap_2ways",
+                "is_cashoutable": false,
+                "nb_selection_by_line": 2,
+                "group": "Spread",
+                "see_more": 3,
+                "bets": [
+                  {
+                    "label": "Spread (-3.5) - Result (inc overtime)",
+                    "selections": [
+                      {
+                        "id": 5451250966,
+                        "odds": 1.98,
+                        "odds_display": "-102",
+                        "label": "Rockets (+3.5)",
+                        "abrev": "Rockets (+3.5)"
+                      },
+                      {
+                        "id": 5451250965,
+                        "odds": 1.83,
+                        "odds_display": "-120",
+                        "label": "Warriors (-3.5)",
+                        "abrev": "Warriors (-3.5)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "order": 300,
+                "selection_order_type": "over_under",
+                "is_cashoutable": true,
+                "nb_selection_by_line": 2,
+                "group": "Total",
+                "see_more": 3,
+                "bets": [
+                  {
+                    "label": "Over/Under 202.5 points (inc overtime)",
+                    "selections": [
+                      {
+                        "id": 5451132564,
+                        "odds": 1.88,
+                        "odds_display": "-114",
+                        "label": "Over 202.5",
+                        "abrev": "Over"
+                      },
+                      {
+                        "id": 5451132563,
+                        "odds": 1.93,
+                        "odds_display": "-108",
+                        "label": "Under 202.5",
+                        "abrev": "Under"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "bet_builder_id": 450914,
+            "id": 9325546,
+            "label": "Rockets / Warriors",
+            "sport": {
+              "id": 4,
+              "label": "Basketball",
+              "icon": "basketball",
+              "url": "/en_us/basketball"
+            },
+            "category": {
+              "id": 7,
+              "label": "United States",
+              "url": "/en_us/basketball/united-states"
+            },
+            "competition": {
+              "id": 206,
+              "label": "NBA",
+              "display_mode": "at",
+              "url": "/en_us/basketball/united-states/nba"
+            },
+            "start": "2025-04-29T04:00:00.000+02:00",
+            "creation": "2025-04-16T14:50:32.000+02:00",
+            "url": "/en_us/evenement/9325546-rockets-warriors",
+            "betbuilder": {
+              "name": "Same Game Parlay",
+              "description": "Build your SGP now!",
+              "icon": "/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "icon_alt": "/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "icon_url": "https://sportsbook.crabsports.com/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "icon_alt_url": "https://sportsbook.crabsports.com/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "button_description": "Build now!",
+              "url": "https://public-prod-gen2.sportcastlive.com?key=0469dbaf-4766-4e05-810c-32a08d86daea&fixtureId=450914&brand=crabsport&odds=AmericanPrice&culture=en-US&region=maryland&pos=rev",
+              "id": 450914
+            },
+            "filter_ids": [
+              4
+            ]
+          },
+          {
+            "ts_creation": 1745636399,
+            "is_canceled": false,
+            "is_cashoutable": true,
+            "ts_start": 1745964000,
+            "type": "pm",
+            "state": "pm",
+            "event_live_id": 9384431,
+            "nb_bets": 184,
+            "match_id": "12173479",
+            "actors": [
+              {
+                "id": 551770,
+                "type": "home",
+                "label": "Bucks",
+                "abrev": "Bucks"
+              },
+              {
+                "id": 555452,
+                "type": "away",
+                "label": "Pacers",
+                "abrev": "Pacers"
+              }
+            ],
+            "markets": [
+              {
+                "order": 1,
+                "selection_order_type": "moneyline",
+                "is_cashoutable": true,
+                "nb_selection_by_line": 2,
+                "bets": [
+                  {
+                    "label": "Moneyline",
+                    "selections": [
+                      {
+                        "id": 5451221890,
+                        "odds": 3.75,
+                        "odds_display": "+275",
+                        "label": "Bucks",
+                        "abrev": "Bucks"
+                      },
+                      {
+                        "id": 5451221891,
+                        "odds": 1.27,
+                        "odds_display": "-370",
+                        "label": "Pacers",
+                        "abrev": "Pacers"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "order": 200,
+                "selection_order_type": "handicap_2ways",
+                "is_cashoutable": false,
+                "nb_selection_by_line": 2,
+                "group": "Spread",
+                "see_more": 3,
+                "bets": [
+                  {
+                    "label": "Spread (-7.5) - Result (inc overtime)",
+                    "selections": [
+                      {
+                        "id": 5451250962,
+                        "odds": 1.98,
+                        "odds_display": "-102",
+                        "label": "Bucks (+7.5)",
+                        "abrev": "Bucks (+7.5)"
+                      },
+                      {
+                        "id": 5451250961,
+                        "odds": 1.83,
+                        "odds_display": "-120",
+                        "label": "Pacers (-7.5)",
+                        "abrev": "Pacers (-7.5)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "order": 300,
+                "selection_order_type": "over_under",
+                "is_cashoutable": true,
+                "nb_selection_by_line": 2,
+                "group": "Total",
+                "see_more": 3,
+                "bets": [
+                  {
+                    "label": "Over/Under 222.5 points (inc overtime)",
+                    "selections": [
+                      {
+                        "id": 5451218538,
+                        "odds": 1.88,
+                        "odds_display": "-114",
+                        "label": "Over 222.5",
+                        "abrev": "Over"
+                      },
+                      {
+                        "id": 5451218539,
+                        "odds": 1.93,
+                        "odds_display": "-108",
+                        "label": "Under 222.5",
+                        "abrev": "Under"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "bet_builder_id": 450917,
+            "id": 9372815,
+            "label": "Bucks / Pacers",
+            "sport": {
+              "id": 4,
+              "label": "Basketball",
+              "icon": "basketball",
+              "url": "/en_us/basketball"
+            },
+            "category": {
+              "id": 7,
+              "label": "United States",
+              "url": "/en_us/basketball/united-states"
+            },
+            "competition": {
+              "id": 206,
+              "label": "NBA",
+              "display_mode": "at",
+              "url": "/en_us/basketball/united-states/nba"
+            },
+            "start": "2025-04-30T00:00:00.000+02:00",
+            "creation": "2025-04-26T04:59:59.000+02:00",
+            "url": "/en_us/evenement/9372815-bucks-pacers",
+            "betbuilder": {
+              "name": "Same Game Parlay",
+              "description": "Build your SGP now!",
+              "icon": "/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "icon_alt": "/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "icon_url": "https://sportsbook.crabsports.com/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "icon_alt_url": "https://sportsbook.crabsports.com/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "button_description": "Build now!",
+              "url": "https://public-prod-gen2.sportcastlive.com?key=0469dbaf-4766-4e05-810c-32a08d86daea&fixtureId=450917&brand=crabsport&odds=AmericanPrice&culture=en-US&region=maryland&pos=rev",
+              "id": 450917
+            },
+            "filter_ids": [
+              4
+            ]
+          },
+          {
+            "ts_creation": 1745324785,
+            "is_canceled": false,
+            "is_cashoutable": true,
+            "ts_start": 1745969400,
+            "type": "pm",
+            "state": "pm",
+            "event_live_id": 9384446,
+            "nb_bets": 168,
+            "match_id": "12152016",
+            "actors": [
+              {
+                "id": 555465,
+                "type": "home",
+                "label": "Pistons",
+                "abrev": "Pistons"
+              },
+              {
+                "id": 555462,
+                "type": "away",
+                "label": "Knicks",
+                "abrev": "Knicks"
+              }
+            ],
+            "markets": [
+              {
+                "order": 1,
+                "selection_order_type": "moneyline",
+                "is_cashoutable": true,
+                "nb_selection_by_line": 2,
+                "bets": [
+                  {
+                    "label": "Moneyline",
+                    "selections": [
+                      {
+                        "id": 5451085285,
+                        "odds": 2.82,
+                        "odds_display": "+182",
+                        "label": "Pistons",
+                        "abrev": "Pistons"
+                      },
+                      {
+                        "id": 5451085286,
+                        "odds": 1.43,
+                        "odds_display": "-233",
+                        "label": "Knicks",
+                        "abrev": "Knicks"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "order": 200,
+                "selection_order_type": "handicap_2ways",
+                "is_cashoutable": false,
+                "nb_selection_by_line": 2,
+                "group": "Spread",
+                "see_more": 3,
+                "bets": [
+                  {
+                    "label": "Spread (-5.5) - Result (inc overtime)",
+                    "selections": [
+                      {
+                        "id": 5451284027,
+                        "odds": 1.9,
+                        "odds_display": "-111",
+                        "label": "Pistons (+5.5)",
+                        "abrev": "Pistons (+5.5)"
+                      },
+                      {
+                        "id": 5451284025,
+                        "odds": 1.92,
+                        "odds_display": "-109",
+                        "label": "Knicks (-5.5)",
+                        "abrev": "Knicks (-5.5)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "order": 300,
+                "selection_order_type": "over_under",
+                "is_cashoutable": true,
+                "nb_selection_by_line": 2,
+                "group": "Total",
+                "see_more": 3,
+                "bets": [
+                  {
+                    "label": "Over/Under 213.5 points (inc overtime)",
+                    "selections": [
+                      {
+                        "id": 5451284478,
+                        "odds": 1.9,
+                        "odds_display": "-111",
+                        "label": "Over 213.5",
+                        "abrev": "Over"
+                      },
+                      {
+                        "id": 5451284479,
+                        "odds": 1.92,
+                        "odds_display": "-109",
+                        "label": "Under 213.5",
+                        "abrev": "Under"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "bet_builder_id": 450918,
+            "id": 9351319,
+            "label": "Pistons / Knicks",
+            "sport": {
+              "id": 4,
+              "label": "Basketball",
+              "icon": "basketball",
+              "url": "/en_us/basketball"
+            },
+            "category": {
+              "id": 7,
+              "label": "United States",
+              "url": "/en_us/basketball/united-states"
+            },
+            "competition": {
+              "id": 206,
+              "label": "NBA",
+              "display_mode": "at",
+              "url": "/en_us/basketball/united-states/nba"
+            },
+            "start": "2025-04-30T01:30:00.000+02:00",
+            "creation": "2025-04-22T14:26:25.000+02:00",
+            "url": "/en_us/evenement/9351319-pistons-knicks",
+            "betbuilder": {
+              "name": "Same Game Parlay",
+              "description": "Build your SGP now!",
+              "icon": "/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "icon_alt": "/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "icon_url": "https://sportsbook.crabsports.com/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "icon_alt_url": "https://sportsbook.crabsports.com/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "button_description": "Build now!",
+              "url": "https://public-prod-gen2.sportcastlive.com?key=0469dbaf-4766-4e05-810c-32a08d86daea&fixtureId=450918&brand=crabsport&odds=AmericanPrice&culture=en-US&region=maryland&pos=rev",
+              "id": 450918
+            },
+            "filter_ids": [
+              4
+            ]
+          },
+          {
+            "ts_creation": 1745636401,
+            "is_canceled": false,
+            "is_cashoutable": true,
+            "ts_start": 1745973000,
+            "type": "pm",
+            "state": "pm",
+            "event_live_id": 9384146,
+            "nb_bets": 144,
+            "match_id": "12173478",
+            "actors": [
+              {
+                "id": 555463,
+                "type": "home",
+                "label": "Magic",
+                "abrev": "Magic"
+              },
+              {
+                "id": 555469,
+                "type": "away",
+                "label": "Celtics",
+                "abrev": "Celtics"
+              }
+            ],
+            "markets": [
+              {
+                "order": 1,
+                "selection_order_type": "moneyline",
+                "is_cashoutable": true,
+                "nb_selection_by_line": 2,
+                "bets": [
+                  {
+                    "label": "Moneyline",
+                    "selections": [
+                      {
+                        "id": 5451062702,
+                        "odds": 5.8,
+                        "odds_display": "+480",
+                        "label": "Magic",
+                        "abrev": "Magic"
+                      },
+                      {
+                        "id": 5451062703,
+                        "odds": 1.14,
+                        "odds_display": "-714",
+                        "label": "Celtics",
+                        "abrev": "Celtics"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "order": 200,
+                "selection_order_type": "handicap_2ways",
+                "is_cashoutable": false,
+                "nb_selection_by_line": 2,
+                "group": "Spread",
+                "see_more": 3,
+                "bets": [
+                  {
+                    "label": "Spread (-12.5) - Result (inc overtime)",
+                    "selections": [
+                      {
+                        "id": 5451272926,
+                        "odds": 1.83,
+                        "odds_display": "-120",
+                        "label": "Magic (+12.5)",
+                        "abrev": "Magic (+12.5)"
+                      },
+                      {
+                        "id": 5451272927,
+                        "odds": 1.98,
+                        "odds_display": "-102",
+                        "label": "Celtics (-12.5)",
+                        "abrev": "Celtics (-12.5)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "order": 300,
+                "selection_order_type": "over_under",
+                "is_cashoutable": true,
+                "nb_selection_by_line": 2,
+                "group": "Total",
+                "see_more": 3,
+                "bets": [
+                  {
+                    "label": "Over/Under 199.5 points (inc overtime)",
+                    "selections": [
+                      {
+                        "id": 5451251000,
+                        "odds": 1.85,
+                        "odds_display": "-118",
+                        "label": "Over 199.5",
+                        "abrev": "Over"
+                      },
+                      {
+                        "id": 5451250999,
+                        "odds": 1.93,
+                        "odds_display": "-108",
+                        "label": "Under 199.5",
+                        "abrev": "Under"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "bet_builder_id": 450915,
+            "id": 9372816,
+            "label": "Magic / Celtics",
+            "sport": {
+              "id": 4,
+              "label": "Basketball",
+              "icon": "basketball",
+              "url": "/en_us/basketball"
+            },
+            "category": {
+              "id": 7,
+              "label": "United States",
+              "url": "/en_us/basketball/united-states"
+            },
+            "competition": {
+              "id": 206,
+              "label": "NBA",
+              "display_mode": "at",
+              "url": "/en_us/basketball/united-states/nba"
+            },
+            "start": "2025-04-30T02:30:00.000+02:00",
+            "creation": "2025-04-26T05:00:01.000+02:00",
+            "url": "/en_us/evenement/9372816-magic-celtics",
+            "betbuilder": {
+              "name": "Same Game Parlay",
+              "description": "Build your SGP now!",
+              "icon": "/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "icon_alt": "/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "icon_url": "https://sportsbook.crabsports.com/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "icon_alt_url": "https://sportsbook.crabsports.com/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "button_description": "Build now!",
+              "url": "https://public-prod-gen2.sportcastlive.com?key=0469dbaf-4766-4e05-810c-32a08d86daea&fixtureId=450915&brand=crabsport&odds=AmericanPrice&culture=en-US&region=maryland&pos=rev",
+              "id": 450915
+            },
+            "filter_ids": [
+              4
+            ]
+          },
+          {
+            "ts_creation": 1745324784,
+            "is_canceled": false,
+            "is_cashoutable": true,
+            "ts_start": 1745978400,
+            "type": "pm",
+            "state": "pm",
+            "event_live_id": 9384149,
+            "nb_bets": 133,
+            "match_id": "12152149",
+            "actors": [
+              {
+                "id": 551781,
+                "type": "home",
+                "label": "Clippers",
+                "abrev": "Clippers"
+              },
+              {
+                "id": 555455,
+                "type": "away",
+                "label": "Nuggets",
+                "abrev": "Nuggets"
+              }
+            ],
+            "markets": [
+              {
+                "order": 1,
+                "selection_order_type": "moneyline",
+                "is_cashoutable": true,
+                "nb_selection_by_line": 2,
+                "bets": [
+                  {
+                    "label": "Moneyline",
+                    "selections": [
+                      {
+                        "id": 5451268968,
+                        "odds": 1.77,
+                        "odds_display": "-130",
+                        "label": "Clippers",
+                        "abrev": "Clippers"
+                      },
+                      {
+                        "id": 5451268969,
+                        "odds": 2.05,
+                        "odds_display": "+105",
+                        "label": "Nuggets",
+                        "abrev": "Nuggets"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "order": 200,
+                "selection_order_type": "handicap_2ways",
+                "is_cashoutable": false,
+                "nb_selection_by_line": 2,
+                "group": "Spread",
+                "see_more": 3,
+                "bets": [
+                  {
+                    "label": "Spread (1.5) - Result (inc overtime)",
+                    "selections": [
+                      {
+                        "id": 5451268973,
+                        "odds": 1.88,
+                        "odds_display": "-114",
+                        "label": "Clippers (-1.5)",
+                        "abrev": "Clippers (-1.5)"
+                      },
+                      {
+                        "id": 5451268972,
+                        "odds": 1.93,
+                        "odds_display": "-108",
+                        "label": "Nuggets (+1.5)",
+                        "abrev": "Nuggets (+1.5)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "order": 300,
+                "selection_order_type": "over_under",
+                "is_cashoutable": true,
+                "nb_selection_by_line": 2,
+                "group": "Total",
+                "see_more": 3,
+                "bets": [
+                  {
+                    "label": "Over/Under 208.5 points (inc overtime)",
+                    "selections": [
+                      {
+                        "id": 5451094965,
+                        "odds": 1.9,
+                        "odds_display": "-111",
+                        "label": "Over 208.5",
+                        "abrev": "Over"
+                      },
+                      {
+                        "id": 5451094964,
+                        "odds": 1.92,
+                        "odds_display": "-109",
+                        "label": "Under 208.5",
+                        "abrev": "Under"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "bet_builder_id": 450916,
+            "id": 9351318,
+            "label": "Clippers / Nuggets",
+            "sport": {
+              "id": 4,
+              "label": "Basketball",
+              "icon": "basketball",
+              "url": "/en_us/basketball"
+            },
+            "category": {
+              "id": 7,
+              "label": "United States",
+              "url": "/en_us/basketball/united-states"
+            },
+            "competition": {
+              "id": 206,
+              "label": "NBA",
+              "display_mode": "at",
+              "url": "/en_us/basketball/united-states/nba"
+            },
+            "start": "2025-04-30T04:00:00.000+02:00",
+            "creation": "2025-04-22T14:26:24.000+02:00",
+            "url": "/en_us/evenement/9351318-clippers-nuggets",
+            "betbuilder": {
+              "name": "Same Game Parlay",
+              "description": "Build your SGP now!",
+              "icon": "/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "icon_alt": "/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "icon_url": "https://sportsbook.crabsports.com/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "icon_alt_url": "https://sportsbook.crabsports.com/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "button_description": "Build now!",
+              "url": "https://public-prod-gen2.sportcastlive.com?key=0469dbaf-4766-4e05-810c-32a08d86daea&fixtureId=450916&brand=crabsport&odds=AmericanPrice&culture=en-US&region=maryland&pos=rev",
+              "id": 450916
+            },
+            "filter_ids": [
+              4
+            ]
+          },
+          {
+            "ts_creation": 1745411658,
+            "is_canceled": false,
+            "is_cashoutable": true,
+            "ts_start": 1746064800,
+            "type": "pm",
+            "state": "pm",
+            "event_live_id": 9384694,
+            "nb_bets": 133,
+            "match_id": "12165133",
+            "actors": [
+              {
+                "id": 555458,
+                "type": "home",
+                "label": "Timberwolves",
+                "abrev": "Timberwolves"
+              },
+              {
+                "id": 551769,
+                "type": "away",
+                "label": "Lakers",
+                "abrev": "Lakers"
+              }
+            ],
+            "markets": [
+              {
+                "order": 1,
+                "selection_order_type": "moneyline",
+                "is_cashoutable": true,
+                "nb_selection_by_line": 2,
+                "bets": [
+                  {
+                    "label": "Moneyline",
+                    "selections": [
+                      {
+                        "id": 5451227964,
+                        "odds": 2.87,
+                        "odds_display": "+187",
+                        "label": "Timberwolves",
+                        "abrev": "Timberwolves"
+                      },
+                      {
+                        "id": 5451227965,
+                        "odds": 1.42,
+                        "odds_display": "-238",
+                        "label": "Lakers",
+                        "abrev": "Lakers"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "order": 200,
+                "selection_order_type": "handicap_2ways",
+                "is_cashoutable": false,
+                "nb_selection_by_line": 2,
+                "group": "Spread",
+                "see_more": 3,
+                "bets": [
+                  {
+                    "label": "Spread (-5.5) - Result (inc overtime)",
+                    "selections": [
+                      {
+                        "id": 5451227971,
+                        "odds": 1.9,
+                        "odds_display": "-111",
+                        "label": "Timberwolves (+5.5)",
+                        "abrev": "Timberwolves (+5.5)"
+                      },
+                      {
+                        "id": 5451227970,
+                        "odds": 1.9,
+                        "odds_display": "-111",
+                        "label": "Lakers (-5.5)",
+                        "abrev": "Lakers (-5.5)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "order": 300,
+                "selection_order_type": "over_under",
+                "is_cashoutable": true,
+                "nb_selection_by_line": 2,
+                "group": "Total",
+                "see_more": 3,
+                "bets": [
+                  {
+                    "label": "Over/Under 209.5 points (inc overtime)",
+                    "selections": [
+                      {
+                        "id": 5451154758,
+                        "odds": 1.9,
+                        "odds_display": "-111",
+                        "label": "Over 209.5",
+                        "abrev": "Over"
+                      },
+                      {
+                        "id": 5451154759,
+                        "odds": 1.9,
+                        "odds_display": "-111",
+                        "label": "Under 209.5",
+                        "abrev": "Under"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "bet_builder_id": 450920,
+            "id": 9357485,
+            "label": "Timberwolves / Lakers",
+            "sport": {
+              "id": 4,
+              "label": "Basketball",
+              "icon": "basketball",
+              "url": "/en_us/basketball"
+            },
+            "category": {
+              "id": 7,
+              "label": "United States",
+              "url": "/en_us/basketball/united-states"
+            },
+            "competition": {
+              "id": 206,
+              "label": "NBA",
+              "display_mode": "at",
+              "url": "/en_us/basketball/united-states/nba"
+            },
+            "start": "2025-05-01T04:00:00.000+02:00",
+            "creation": "2025-04-23T14:34:18.000+02:00",
+            "url": "/en_us/evenement/9357485-timberwolves-lakers",
+            "betbuilder": {
+              "name": "Same Game Parlay",
+              "description": "Build your SGP now!",
+              "icon": "/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "icon_alt": "/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "icon_url": "https://sportsbook.crabsports.com/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "icon_alt_url": "https://sportsbook.crabsports.com/img/market/betbuilder/SGPIcon-6ff70f0ffad488b68d856f89b1cff7a13c68d951-c66e19b146283a22dbdf32f330b37f30db65a378.png",
+              "button_description": "Build now!",
+              "url": "https://public-prod-gen2.sportcastlive.com?key=0469dbaf-4766-4e05-810c-32a08d86daea&fixtureId=450920&brand=crabsport&odds=AmericanPrice&culture=en-US&region=maryland&pos=rev",
+              "id": 450920
+            },
+            "filter_ids": [
+              4
+            ]
+          }
+        ],
+        "filters": [
+          {
+            "id": 0,
+            "label": "All",
+            "icon": "all",
+            "count": 7
+          },
+          {
+            "id": 4,
+            "label": "Basketball",
+            "icon": "basketball",
+            "count": 7
+          }
+        ],
+        "defaultActiveFilter": null,
+        "texts": {
+          "access_prematch_event": "access_prematch_event_translation",
+          "market_selector": "market_selector",
+          "betbuilder_available": "betbuilder_available",
+          "event_date_min": "event_date_min",
+          "event_date_live_in": "event_date_live_in"
+        },
+        "paging_link": {
+          "label": "event_list_label_show_more"
+        }
+      },
+      "execution_time": "0.0000040531"
+    }
+  ]
+}
