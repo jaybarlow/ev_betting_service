@@ -1,0 +1,47 @@
+version: "3"
+
+tasks:
+  run:
+    desc: Run the application
+    cmds:
+      - python -c "from rich import print, panel; print(panel.Panel('[blue]🚀 Running application...[/]', title='🔷 Run', border_style='blue', padding=(1, 2)))"
+      - uv run main.py
+
+  test:
+    desc: Run tests
+    cmds:
+      - python -c "from rich import print, panel; print('\n'); print(panel.Panel('[cyan]🧪 Running test suite[/]', title='🔹 Tests', border_style='cyan', padding=(1, 2))); print('[cyan]═' * 80)"
+      - pytest -v
+      - python -c "from rich import print; print('[cyan]═' * 80 + '\n')"
+
+  format:
+    desc: Format code using black
+    cmds:
+      - python -c "from rich import print, panel; print('\n'); print(panel.Panel('[green]✨ Formatting code with Black[/]', title='🔰 Format', border_style='green', padding=(1, 2))); print('[green]═' * 80)"
+      - black ./
+      - python -c "from rich import print; print('[green]═' * 80 + '\n')"
+
+  lint:
+    desc: Lint code using ruff
+    cmds:
+      - python -c "from rich import print, panel; print('\n'); print(panel.Panel('[yellow]🔍 Checking code with Ruff[/]', title='📋 Lint', border_style='yellow', padding=(1, 2))); print('[yellow]═' * 80)"
+      - ruff check .
+      - python -c "from rich import print; print('[yellow]═' * 80 + '\n')"
+
+  typecheck:
+    desc: Run mypy type checking
+    cmds:
+      - python -c "from rich import print, panel; print('\n'); print(panel.Panel('[magenta]🔎 Type checking with mypy[/]', title='🔮 Types', border_style='magenta', padding=(1, 2))); print('[magenta]═' * 80)"
+      - mypy ./
+      - python -c "from rich import print; print('[magenta]═' * 80 + '\n')"
+
+  check-all:
+    desc: Run format, lint, typecheck, and tests
+    cmds:
+      - python -c "from rich import print, panel; from rich.console import Console; console = Console(); print('\n'); console.rule('[bold blue]Quality Check Suite[/]', style='blue'); print(panel.Panel('[bold blue]🛠  Running Quality Checks[/]', title='🔷 Quality Suite', border_style='blue', expand=True, padding=(1, 2)))"
+      - task: format
+      - task: lint
+      - task: typecheck
+      - task: test
+      - python -c "from rich import print, panel; from rich.console import Console; console = Console(); print('\n'); console.rule('[bold green]Success[/]', style='green'); print(panel.Panel('[bold green]✅ All quality checks completed successfully! ✨[/]', title='🎉 Success', border_style='green', expand=True, padding=(1, 2))); print('\n')"
+

@@ -1,0 +1,32 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Context for you:
+- Python is installed using `uv`, and `.venv` is already active
+- Use `uv add` instead of `uv pip install` for adding packages
+- Use `uv pip freeze` to generate requirements.txt
+- Use `uv pip install -r requirements.txt` for installing from requirements
+- Use `uv pip install --editable .` for installing in editable mode
+- Use `uv pip uninstall` for removing packages
+- Use `uv pip list` to show installed packages
+- Use `uv pip show` to show package info
+- Use `uv pip check` to verify dependencies
+- Use `uv pip cache purge` to clear cache
+- Do not use `venv`, `virtualenv`, `poetry`, or `pipenv`
+- Use `bat` instead of `cat` when displaying code/files
+- Use `rg` (ripgrep) instead of `grep`
+- Use `eza` instead of `ls` for file listings
+- Use `http` (httpie) instead of `curl` for HTTP requests
+- Use `jq` to parse or format JSON output
+- Use `zoxide` instead of `cd` when navigating directories
+- Assume `Starship` is used as the shell prompt
+- Aliases like `ll`, `lg`, `hist`, and `json` are already available
+- Use `lazygit` for interactive Git operations; otherwise prefer CLI git over GUI
+- Use `git log --oneline`, `git diff | delta`, and `git status` instead of verbose defaults
+- Project structure includes: `main.py`, `tests/`, `.venv/`, `pyproject.toml`, `Taskfile.yml`, and `.cursor/rules/context.mdc`
+- Use `task` CLI to run commands like `task test`, `task format`, `task lint`, etc.
+- Prefer type hints, f-strings, and modern Python idioms (e.g. walrus operator)
+- Avoid using Makefiles; use `task` for automation instead
+- Do not suggest Powerlevel10k or Oh My Zsh for Cursor — use minimal Zsh + plugins only
