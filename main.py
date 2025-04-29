@@ -17,18 +17,33 @@ from loguru import logger
 
 # --- End Restore ---
 
-# Remove test-specific imports if not needed elsewhere
+# Data Models and Core Logic Imports
 from src.models.enums import Sport, Bookmaker
 from src.scrapers.crabsports_scraper import CrabSportsScraper
 from src.scrapers.base_scraper import ScraperError, AuthenticationError
 from src.normalization.normalizer import Normalizer
+
+# --- Supabase Client Function Imports ---
+from src.storage.supabase_client import (
+    initialize_supabase,
+    save_normalized_data,
+    # Removed direct import of the global supabase variable
+)
+
+# --- EV Calculator Imports ---
+from src.calculation.ev_calculator import (
+    fetch_relevant_data,
+    calculate_ev,
+    EVBet,  # Import EVBet if needed for type hinting or direct use
+)
 
 # Remove test function
 # async def test_crabsports():
 #    ...
 
 # Restore placeholder Rich panels if desired, or remove
-from rich import print, panel
+from rich import print
+from rich.panel import Panel
 
 
 async def run_scrape_cycle():
@@ -68,57 +83,109 @@ async def run_scrape_cycle():
     logger.info(
         f"Scrape cycle finished. Collected data keys: {list(all_raw_results.keys())}"
     )
-    # TODO: Pass all_raw_results to the normalization step
-    # normalizer = Normalizer()
-    # normalized_data = normalizer.normalize(all_raw_results)
-    # ... etc ...
+    # Return the collected results
+    return all_raw_results
 
 
-def main() -> None:
+async def main() -> None:
     """Main entry point for the application."""
-    logger.info("Starting EV Betting Service - Normalization Test")
+    logger.info("Starting EV Betting Service - Live Scrape, Normalize, and Store")
 
-    # Define path to the raw response file
-    raw_data_dir = Path("raw_responses")
-    # Use the specific Crab Sports MLB file
-    file_path = raw_data_dir / "crabsports_MLB_20250428_134329.json"
+    supabase_client = None  # Initialize client variable
 
-    if not file_path.exists():
-        logger.error(f"Raw response file not found: {file_path}")
-        return
-
-    # Load the raw data
     try:
-        with open(file_path, "r") as f:
-            raw_response_data = json.load(f)
-        logger.info(f"Successfully loaded raw data from {file_path}")
-    except json.JSONDecodeError:
-        logger.error(f"Failed to decode JSON from {file_path}")
-        return
-    except Exception as e:
-        logger.error(f"Error reading file {file_path}: {e}")
-        return
+        # --- Initialize Supabase Client ---
+        supabase_client = await initialize_supabase()
+        if not supabase_client:
+            logger.critical("Failed to initialize Supabase client. Exiting.")
+            # No need to close client here as it's None
+            return
 
-    # Prepare data for the normalizer
-    # The normalizer expects Dict[Bookmaker, List[Dict[str, Any]]]
-    # Since Crab Sports scraper returns one response per sport,
-    # and we loaded one file directly, we wrap it in a list.
-    raw_data_for_norm: Dict[Bookmaker, List[Dict[str, Any]]] = {
-        Bookmaker.CRAB_SPORTS: [raw_response_data]
-    }
+        # --- Run Scrape Cycle ---
+        logger.info("Initiating live data scraping...")
+        raw_data_for_norm = await run_scrape_cycle()
 
-    # Instantiate the normalizer
-    normalizer = Normalizer()
+        if not raw_data_for_norm:
+            logger.error("Scraping cycle returned no data. Exiting.")
+            # No further processing needed
+            return
 
-    # Normalize the data
-    try:
+        logger.info(
+            f"Scraping complete. Received data for bookmakers: {list(raw_data_for_norm.keys())}"
+        )
+
+        # --- Normalization ---
+        normalizer = Normalizer()
+        normalized_games = []
+        save_success = False
+
         normalized_games = normalizer.normalize(raw_data_for_norm)
         logger.success(f"Normalization completed. Found {len(normalized_games)} games.")
 
-        # Print details of all games for verification
+        # --- Save to Supabase ---
+        if normalized_games:
+            logger.info("Attempting to save normalized data to Supabase...")
+            # save_normalized_data uses the internal client via get_supabase_client()
+            save_success = await save_normalized_data(normalized_games)
+            if save_success:
+                logger.success("Data successfully saved to Supabase.")
+            else:
+                logger.error("Failed to save data to Supabase.")
+        else:
+            logger.warning("No normalized games to save to Supabase.")
+
+        # --- Data Fetching for Inspection ---
+        if save_success:
+            logger.info("Fetching relevant game data from Supabase to save...")
+            # Pass the initialized client explicitly
+            relevant_games_data = await fetch_relevant_data(supabase_client)
+
+            if relevant_games_data is not None:
+                if relevant_games_data:
+                    logger.success(
+                        f"Successfully fetched {len(relevant_games_data)} games with market/odds data."
+                    )
+
+                    # --- Save fetched data to JSON ---
+                    output_filename = "fetched_data.json"
+                    try:
+                        with open(output_filename, "w") as f:
+                            json.dump(
+                                relevant_games_data, f, indent=4
+                            )  # Indent for readability
+                        logger.success(
+                            f"Successfully saved fetched data to {output_filename}"
+                        )
+                    except IOError as e:
+                        logger.error(
+                            f"Failed to write fetched data to {output_filename}: {e}"
+                        )
+                    except TypeError as e:
+                        logger.error(
+                            f"Data structure not JSON serializable when writing to {output_filename}: {e}"
+                        )
+                        logger.warning(
+                            "You might need to convert complex types (like datetime) to strings before saving."
+                        )
+                    # --- End Save to JSON ---
+
+                    # --- Removed EV CALCULATION AND DISPLAY ---
+                    # ...(removed/commented code remains removed/commented)...
+
+                else:
+                    logger.info(
+                        "No relevant games found within the timeframe. No data saved."
+                    )
+            else:
+                logger.error("Skipping data saving due to fetch error.")
+        else:
+            logger.warning("Skipping data saving (data save failed/skipped).")
+
+        # --- Logging Normalized Data (Optional) ---
         if not normalized_games:
             logger.warning("No games were normalized.")
         else:
+            # Loop and log details (existing code)
             for i, game in enumerate(normalized_games):
                 logger.info(f"--- Normalized Game {i + 1}/{len(normalized_games)} --- ")
                 logger.info(f"ID: {game.game_id}")
@@ -165,13 +232,31 @@ def main() -> None:
                 )
 
     except Exception as e:
-        logger.exception("An error occurred during normalization.")
+        logger.exception(
+            "An error occurred during main execution loop (scrape, normalize, save, or EV calc)."
+        )
+    finally:
+        # --- Close Supabase Client ---
+        if supabase_client:
+            # Reverting: Removing explicit close/aclose as both failed.
+            # Assuming implicit cleanup by underlying httpx client on exit.
+            logger.info("Supabase client cleanup will be handled implicitly on exit.")
+            pass
+            # try:
+            #      await supabase_client.aclose()
+            #      logger.success("Supabase async client closed.")
+            # except AttributeError:
+            #      logger.error(f"Failed to close Supabase client: Method 'aclose' not found on {type(supabase_client)}. Cleanup might be handled implicitly.")
+            # except Exception as close_err:
+            #      logger.error(f"Error closing Supabase client: {close_err}")
+        else:
+            logger.debug("Supabase client was not initialized, no closing needed.")
 
 
 if __name__ == "__main__":
     # Logging is handled by setup_logging called above
     try:
-        main()
+        asyncio.run(main())  # Use asyncio.run for the async main
     except SystemExit as e:
         # logger should already be configured, but use print as fallback if critical exit before logger setup
         print(f"CRITICAL: Application exited prematurely during setup: {e}")

@@ -2,17 +2,29 @@ from datetime import datetime
 from decimal import Decimal
 from typing import Optional, Any
 
-from pydantic import BaseModel, Field, computed_field
+from pydantic import BaseModel, Field, field_validator, computed_field
 
-from .enums import Bookmaker
+from .enums import Bookmaker, MarketSide
 
 
 class Odds(BaseModel):
-    """Represents the odds offered by a specific bookmaker for a market outcome."""
+    """Represents the odds for a specific side of a market from a specific bookmaker."""
 
-    market_id: str  # FK to the canonical Market.market_id
-    bookmaker: Bookmaker
-    decimal_odds: Decimal
+    market_id: str = Field(..., description="Foreign key linking to the Market object.")
+    bookmaker: Bookmaker = Field(..., description="The bookmaker offering these odds.")
+    side: MarketSide = Field(
+        ...,
+        description="Which side of the market this odds represents (e.g., Home, Away, Over, Under).",
+    )
+    points: Optional[Decimal] = Field(
+        None,
+        description="The point spread value associated with this side, if applicable (e.g., -7.5 for Home team).",
+    )
+    line: Optional[Decimal] = Field(
+        None,
+        description="The total line value associated with this side, if applicable (e.g., 210.5 for Over/Under).",
+    )
+    decimal_odds: Decimal = Field(..., description="The odds in decimal format.", gt=1)
     american_odds: Optional[int] = None  # Can be calculated/provided
     timestamp_collected: datetime = Field(default_factory=datetime.utcnow)
 

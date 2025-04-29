@@ -1,0 +1,2128 @@
+[
+    {
+        "game_id": "nba_nba_pacers_at_bucks_20250429",
+        "sport": "NBA",
+        "league": "NBA",
+        "start_time_utc": "2025-04-29T22:00:00+00:00",
+        "home_team_id": "bucks",
+        "away_team_id": "pacers",
+        "last_updated_utc": "2025-04-29T17:52:17.437731+00:00",
+        "raw_event_id": "9372815",
+        "markets": [
+            {
+                "line": 8.5,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": 8.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_pacers_at_bucks_20250429_spread_85",
+                        "decimal_odds": 1.82,
+                        "american_odds": -121,
+                        "implied_probability": 0.5494505494505495,
+                        "timestamp_collected": "2025-04-29T17:52:17.441675+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": -8.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_pacers_at_bucks_20250429_spread_85",
+                        "decimal_odds": 2.0,
+                        "american_odds": 100,
+                        "implied_probability": 0.5,
+                        "timestamp_collected": "2025-04-29T17:52:17.441803+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "nba_nba_pacers_at_bucks_20250429",
+                "market_id": "nba_nba_pacers_at_bucks_20250429_spread_85",
+                "market_type": "SPREAD",
+                "raw_market_name": "Spread (-8.5) - Result (inc overtime)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": null,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_pacers_at_bucks_20250429_moneyline_base",
+                        "decimal_odds": 3.9,
+                        "american_odds": 289,
+                        "implied_probability": 0.2564102564102564,
+                        "timestamp_collected": "2025-04-29T17:52:17.438553+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_pacers_at_bucks_20250429_moneyline_base",
+                        "decimal_odds": 1.26,
+                        "american_odds": -384,
+                        "implied_probability": 0.7936507936507936,
+                        "timestamp_collected": "2025-04-29T17:52:17.44103+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "nba_nba_pacers_at_bucks_20250429",
+                "market_id": "nba_nba_pacers_at_bucks_20250429_moneyline_base",
+                "market_type": "MONEYLINE",
+                "raw_market_name": "Moneyline",
+                "last_updated_utc": "2025-04-28T19:37:34.279402+00:00"
+            },
+            {
+                "line": 7.5,
+                "odds": [],
+                "period": "FULL_GAME",
+                "game_id": "nba_nba_pacers_at_bucks_20250429",
+                "market_id": "nba_nba_pacers_at_bucks_20250429_spread_75",
+                "market_type": "SPREAD",
+                "raw_market_name": "Spread (-7.5) - Result (inc overtime)",
+                "last_updated_utc": "2025-04-28T19:37:34.279402+00:00"
+            },
+            {
+                "line": 222.5,
+                "odds": [
+                    {
+                        "line": 222.5,
+                        "side": "OVER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_pacers_at_bucks_20250429_total_2225",
+                        "decimal_odds": 1.92,
+                        "american_odds": -108,
+                        "implied_probability": 0.5208333333333334,
+                        "timestamp_collected": "2025-04-29T17:52:17.441939+00:00"
+                    },
+                    {
+                        "line": 222.5,
+                        "side": "UNDER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_pacers_at_bucks_20250429_total_2225",
+                        "decimal_odds": 1.9,
+                        "american_odds": -111,
+                        "implied_probability": 0.5263157894736842,
+                        "timestamp_collected": "2025-04-29T17:52:17.441957+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "nba_nba_pacers_at_bucks_20250429",
+                "market_id": "nba_nba_pacers_at_bucks_20250429_total_2225",
+                "market_type": "TOTAL",
+                "raw_market_name": "Over/Under 222.5 points (inc overtime)",
+                "last_updated_utc": "2025-04-28T19:37:34.279402+00:00"
+            }
+        ]
+    },
+    {
+        "game_id": "nba_nba_knicks_at_pistons_20250429",
+        "sport": "NBA",
+        "league": "NBA",
+        "start_time_utc": "2025-04-29T23:30:00+00:00",
+        "home_team_id": "pistons",
+        "away_team_id": "knicks",
+        "last_updated_utc": "2025-04-29T17:52:17.442046+00:00",
+        "raw_event_id": "9351319",
+        "markets": [
+            {
+                "line": 214.5,
+                "odds": [
+                    {
+                        "line": 214.5,
+                        "side": "OVER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_knicks_at_pistons_20250429_total_2145",
+                        "decimal_odds": 1.9,
+                        "american_odds": -111,
+                        "implied_probability": 0.5263157894736842,
+                        "timestamp_collected": "2025-04-29T17:52:17.442192+00:00"
+                    },
+                    {
+                        "line": 214.5,
+                        "side": "UNDER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_knicks_at_pistons_20250429_total_2145",
+                        "decimal_odds": 1.92,
+                        "american_odds": -108,
+                        "implied_probability": 0.5208333333333334,
+                        "timestamp_collected": "2025-04-29T17:52:17.442204+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "nba_nba_knicks_at_pistons_20250429",
+                "market_id": "nba_nba_knicks_at_pistons_20250429_total_2145",
+                "market_type": "TOTAL",
+                "raw_market_name": "Over/Under 214.5 points (inc overtime)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": null,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_knicks_at_pistons_20250429_moneyline_base",
+                        "decimal_odds": 2.82,
+                        "american_odds": 181,
+                        "implied_probability": 0.3546099290780142,
+                        "timestamp_collected": "2025-04-29T17:52:17.442087+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_knicks_at_pistons_20250429_moneyline_base",
+                        "decimal_odds": 1.43,
+                        "american_odds": -232,
+                        "implied_probability": 0.6993006993006993,
+                        "timestamp_collected": "2025-04-29T17:52:17.442099+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "nba_nba_knicks_at_pistons_20250429",
+                "market_id": "nba_nba_knicks_at_pistons_20250429_moneyline_base",
+                "market_type": "MONEYLINE",
+                "raw_market_name": "Moneyline",
+                "last_updated_utc": "2025-04-28T19:37:34.279402+00:00"
+            },
+            {
+                "line": 5.5,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": 5.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_knicks_at_pistons_20250429_spread_55",
+                        "decimal_odds": 1.9,
+                        "american_odds": -111,
+                        "implied_probability": 0.5263157894736842,
+                        "timestamp_collected": "2025-04-29T17:52:17.442146+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": -5.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_knicks_at_pistons_20250429_spread_55",
+                        "decimal_odds": 1.9,
+                        "american_odds": -111,
+                        "implied_probability": 0.5263157894736842,
+                        "timestamp_collected": "2025-04-29T17:52:17.442157+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "nba_nba_knicks_at_pistons_20250429",
+                "market_id": "nba_nba_knicks_at_pistons_20250429_spread_55",
+                "market_type": "SPREAD",
+                "raw_market_name": "Spread (-5.5) - Result (inc overtime)",
+                "last_updated_utc": "2025-04-28T19:37:34.279402+00:00"
+            },
+            {
+                "line": 213.5,
+                "odds": [],
+                "period": "FULL_GAME",
+                "game_id": "nba_nba_knicks_at_pistons_20250429",
+                "market_id": "nba_nba_knicks_at_pistons_20250429_total_2135",
+                "market_type": "TOTAL",
+                "raw_market_name": "Over/Under 213.5 points (inc overtime)",
+                "last_updated_utc": "2025-04-28T19:37:34.279402+00:00"
+            }
+        ]
+    },
+    {
+        "game_id": "nba_nba_celtics_at_magic_20250430",
+        "sport": "NBA",
+        "league": "NBA",
+        "start_time_utc": "2025-04-30T00:30:00+00:00",
+        "home_team_id": "magic",
+        "away_team_id": "celtics",
+        "last_updated_utc": "2025-04-29T17:52:17.44225+00:00",
+        "raw_event_id": "9372816",
+        "markets": [
+            {
+                "line": 11.5,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": 11.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_celtics_at_magic_20250430_spread_115",
+                        "decimal_odds": 1.88,
+                        "american_odds": -113,
+                        "implied_probability": 0.5319148936170213,
+                        "timestamp_collected": "2025-04-29T17:52:17.442326+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": -11.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_celtics_at_magic_20250430_spread_115",
+                        "decimal_odds": 1.92,
+                        "american_odds": -108,
+                        "implied_probability": 0.5208333333333334,
+                        "timestamp_collected": "2025-04-29T17:52:17.442335+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "nba_nba_celtics_at_magic_20250430",
+                "market_id": "nba_nba_celtics_at_magic_20250430_spread_115",
+                "market_type": "SPREAD",
+                "raw_market_name": "Spread (-11.5) - Result (inc overtime)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": 198.5,
+                "odds": [
+                    {
+                        "line": 198.5,
+                        "side": "OVER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_celtics_at_magic_20250430_total_1985",
+                        "decimal_odds": 1.85,
+                        "american_odds": -117,
+                        "implied_probability": 0.5405405405405406,
+                        "timestamp_collected": "2025-04-29T17:52:17.442365+00:00"
+                    },
+                    {
+                        "line": 198.5,
+                        "side": "UNDER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_celtics_at_magic_20250430_total_1985",
+                        "decimal_odds": 1.93,
+                        "american_odds": -107,
+                        "implied_probability": 0.5181347150259067,
+                        "timestamp_collected": "2025-04-29T17:52:17.442375+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "nba_nba_celtics_at_magic_20250430",
+                "market_id": "nba_nba_celtics_at_magic_20250430_total_1985",
+                "market_type": "TOTAL",
+                "raw_market_name": "Over/Under 198.5 points (inc overtime)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": null,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_celtics_at_magic_20250430_moneyline_base",
+                        "decimal_odds": 5.7,
+                        "american_odds": 470,
+                        "implied_probability": 0.17543859649122806,
+                        "timestamp_collected": "2025-04-29T17:52:17.442276+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_celtics_at_magic_20250430_moneyline_base",
+                        "decimal_odds": 1.14,
+                        "american_odds": -714,
+                        "implied_probability": 0.8771929824561403,
+                        "timestamp_collected": "2025-04-29T17:52:17.442285+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "nba_nba_celtics_at_magic_20250430",
+                "market_id": "nba_nba_celtics_at_magic_20250430_moneyline_base",
+                "market_type": "MONEYLINE",
+                "raw_market_name": "Moneyline",
+                "last_updated_utc": "2025-04-28T19:37:34.279402+00:00"
+            },
+            {
+                "line": 12.5,
+                "odds": [],
+                "period": "FULL_GAME",
+                "game_id": "nba_nba_celtics_at_magic_20250430",
+                "market_id": "nba_nba_celtics_at_magic_20250430_spread_125",
+                "market_type": "SPREAD",
+                "raw_market_name": "Spread (-12.5) - Result (inc overtime)",
+                "last_updated_utc": "2025-04-28T19:37:34.279402+00:00"
+            },
+            {
+                "line": 199.5,
+                "odds": [],
+                "period": "FULL_GAME",
+                "game_id": "nba_nba_celtics_at_magic_20250430",
+                "market_id": "nba_nba_celtics_at_magic_20250430_total_1995",
+                "market_type": "TOTAL",
+                "raw_market_name": "Over/Under 199.5 points (inc overtime)",
+                "last_updated_utc": "2025-04-28T19:37:34.279402+00:00"
+            }
+        ]
+    },
+    {
+        "game_id": "nba_nba_nuggets_at_clippers_20250430",
+        "sport": "NBA",
+        "league": "NBA",
+        "start_time_utc": "2025-04-30T02:00:00+00:00",
+        "home_team_id": "clippers",
+        "away_team_id": "nuggets",
+        "last_updated_utc": "2025-04-29T17:52:17.442411+00:00",
+        "raw_event_id": "9351318",
+        "markets": [
+            {
+                "line": null,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_nuggets_at_clippers_20250430_moneyline_base",
+                        "decimal_odds": 1.75,
+                        "american_odds": -133,
+                        "implied_probability": 0.5714285714285714,
+                        "timestamp_collected": "2025-04-29T17:52:17.442434+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_nuggets_at_clippers_20250430_moneyline_base",
+                        "decimal_odds": 2.07,
+                        "american_odds": 106,
+                        "implied_probability": 0.4830917874396135,
+                        "timestamp_collected": "2025-04-29T17:52:17.442442+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "nba_nba_nuggets_at_clippers_20250430",
+                "market_id": "nba_nba_nuggets_at_clippers_20250430_moneyline_base",
+                "market_type": "MONEYLINE",
+                "raw_market_name": "Moneyline",
+                "last_updated_utc": "2025-04-28T19:37:34.279402+00:00"
+            },
+            {
+                "line": -1.5,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": -1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_nuggets_at_clippers_20250430_spread_15",
+                        "decimal_odds": 1.83,
+                        "american_odds": -120,
+                        "implied_probability": 0.546448087431694,
+                        "timestamp_collected": "2025-04-29T17:52:17.44263+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": 1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_nuggets_at_clippers_20250430_spread_15",
+                        "decimal_odds": 1.95,
+                        "american_odds": -105,
+                        "implied_probability": 0.5128205128205128,
+                        "timestamp_collected": "2025-04-29T17:52:17.442649+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "nba_nba_nuggets_at_clippers_20250430",
+                "market_id": "nba_nba_nuggets_at_clippers_20250430_spread_15",
+                "market_type": "SPREAD",
+                "raw_market_name": "Spread (1.5) - Result (inc overtime)",
+                "last_updated_utc": "2025-04-28T19:37:34.279402+00:00"
+            },
+            {
+                "line": 208.5,
+                "odds": [
+                    {
+                        "line": 208.5,
+                        "side": "OVER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_nuggets_at_clippers_20250430_total_2085",
+                        "decimal_odds": 1.88,
+                        "american_odds": -113,
+                        "implied_probability": 0.5319148936170213,
+                        "timestamp_collected": "2025-04-29T17:52:17.442698+00:00"
+                    },
+                    {
+                        "line": 208.5,
+                        "side": "UNDER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "nba_nba_nuggets_at_clippers_20250430_total_2085",
+                        "decimal_odds": 1.92,
+                        "american_odds": -108,
+                        "implied_probability": 0.5208333333333334,
+                        "timestamp_collected": "2025-04-29T17:52:17.44271+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "nba_nba_nuggets_at_clippers_20250430",
+                "market_id": "nba_nba_nuggets_at_clippers_20250430_total_2085",
+                "market_type": "TOTAL",
+                "raw_market_name": "Over/Under 208.5 points (inc overtime)",
+                "last_updated_utc": "2025-04-28T19:37:34.279402+00:00"
+            }
+        ]
+    },
+    {
+        "game_id": "mlb_mlb_guardians_at_twins_20250429",
+        "sport": "MLB",
+        "league": "MLB",
+        "start_time_utc": "2025-04-29T22:10:00+00:00",
+        "home_team_id": "twins",
+        "away_team_id": "guardians",
+        "last_updated_utc": "2025-04-29T17:52:17.445787+00:00",
+        "raw_event_id": "8890113",
+        "markets": [
+            {
+                "line": null,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_guardians_at_twins_20250429_moneyline_base",
+                        "decimal_odds": 2.15,
+                        "american_odds": 114,
+                        "implied_probability": 0.46511627906976744,
+                        "timestamp_collected": "2025-04-29T17:52:17.445824+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_guardians_at_twins_20250429_moneyline_base",
+                        "decimal_odds": 1.7,
+                        "american_odds": -142,
+                        "implied_probability": 0.5882352941176471,
+                        "timestamp_collected": "2025-04-29T17:52:17.445838+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_guardians_at_twins_20250429",
+                "market_id": "mlb_mlb_guardians_at_twins_20250429_moneyline_base",
+                "market_type": "MONEYLINE",
+                "raw_market_name": "Moneyline",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": 1.5,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": 1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_guardians_at_twins_20250429_spread_15",
+                        "decimal_odds": 1.55,
+                        "american_odds": -181,
+                        "implied_probability": 0.6451612903225806,
+                        "timestamp_collected": "2025-04-29T17:52:17.445879+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": -1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_guardians_at_twins_20250429_spread_15",
+                        "decimal_odds": 2.57,
+                        "american_odds": 156,
+                        "implied_probability": 0.38910505836575876,
+                        "timestamp_collected": "2025-04-29T17:52:17.445888+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_guardians_at_twins_20250429",
+                "market_id": "mlb_mlb_guardians_at_twins_20250429_spread_15",
+                "market_type": "SPREAD",
+                "raw_market_name": "Spread (-1.5) - Winner (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": 8.5,
+                "odds": [
+                    {
+                        "line": 8.5,
+                        "side": "OVER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_guardians_at_twins_20250429_total_85",
+                        "decimal_odds": 1.95,
+                        "american_odds": -105,
+                        "implied_probability": 0.5128205128205128,
+                        "timestamp_collected": "2025-04-29T17:52:17.445919+00:00"
+                    },
+                    {
+                        "line": 8.5,
+                        "side": "UNDER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_guardians_at_twins_20250429_total_85",
+                        "decimal_odds": 1.88,
+                        "american_odds": -113,
+                        "implied_probability": 0.5319148936170213,
+                        "timestamp_collected": "2025-04-29T17:52:17.445928+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_guardians_at_twins_20250429",
+                "market_id": "mlb_mlb_guardians_at_twins_20250429_total_85",
+                "market_type": "TOTAL",
+                "raw_market_name": "Over/Under 8.5 runs (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            }
+        ]
+    },
+    {
+        "game_id": "mlb_mlb_orioles_at_yankees_20250429",
+        "sport": "MLB",
+        "league": "MLB",
+        "start_time_utc": "2025-04-29T22:35:00+00:00",
+        "home_team_id": "yankees",
+        "away_team_id": "orioles",
+        "last_updated_utc": "2025-04-29T17:52:17.445984+00:00",
+        "raw_event_id": "9159042",
+        "markets": [
+            {
+                "line": 9.5,
+                "odds": [
+                    {
+                        "line": 9.5,
+                        "side": "OVER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_orioles_at_yankees_20250429_total_95",
+                        "decimal_odds": 1.91,
+                        "american_odds": -109,
+                        "implied_probability": 0.5235602094240838,
+                        "timestamp_collected": "2025-04-29T17:52:17.446081+00:00"
+                    },
+                    {
+                        "line": 9.5,
+                        "side": "UNDER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_orioles_at_yankees_20250429_total_95",
+                        "decimal_odds": 1.93,
+                        "american_odds": -107,
+                        "implied_probability": 0.5181347150259067,
+                        "timestamp_collected": "2025-04-29T17:52:17.446089+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_orioles_at_yankees_20250429",
+                "market_id": "mlb_mlb_orioles_at_yankees_20250429_total_95",
+                "market_type": "TOTAL",
+                "raw_market_name": "Over/Under 9.5 runs (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": -1.5,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": -1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_orioles_at_yankees_20250429_spread_15",
+                        "decimal_odds": 2.02,
+                        "american_odds": 102,
+                        "implied_probability": 0.49504950495049505,
+                        "timestamp_collected": "2025-04-29T17:52:17.446043+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": 1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_orioles_at_yankees_20250429_spread_15",
+                        "decimal_odds": 1.85,
+                        "american_odds": -117,
+                        "implied_probability": 0.5405405405405406,
+                        "timestamp_collected": "2025-04-29T17:52:17.446051+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_orioles_at_yankees_20250429",
+                "market_id": "mlb_mlb_orioles_at_yankees_20250429_spread_15",
+                "market_type": "SPREAD",
+                "raw_market_name": "Spread (1.5) - Winner (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": null,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_orioles_at_yankees_20250429_moneyline_base",
+                        "decimal_odds": 1.61,
+                        "american_odds": -163,
+                        "implied_probability": 0.6211180124223602,
+                        "timestamp_collected": "2025-04-29T17:52:17.446006+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_orioles_at_yankees_20250429_moneyline_base",
+                        "decimal_odds": 2.32,
+                        "american_odds": 131,
+                        "implied_probability": 0.43103448275862066,
+                        "timestamp_collected": "2025-04-29T17:52:17.446014+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_orioles_at_yankees_20250429",
+                "market_id": "mlb_mlb_orioles_at_yankees_20250429_moneyline_base",
+                "market_type": "MONEYLINE",
+                "raw_market_name": "Moneyline",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            }
+        ]
+    },
+    {
+        "game_id": "mlb_mlb_reds_at_cardinals_20250429",
+        "sport": "MLB",
+        "league": "MLB",
+        "start_time_utc": "2025-04-29T22:40:00+00:00",
+        "home_team_id": "cardinals",
+        "away_team_id": "reds",
+        "last_updated_utc": "2025-04-29T17:52:17.446124+00:00",
+        "raw_event_id": "9186930",
+        "markets": [
+            {
+                "line": null,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_reds_at_cardinals_20250429_moneyline_base",
+                        "decimal_odds": 2.2,
+                        "american_odds": 120,
+                        "implied_probability": 0.45454545454545453,
+                        "timestamp_collected": "2025-04-29T17:52:17.446144+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_reds_at_cardinals_20250429_moneyline_base",
+                        "decimal_odds": 1.67,
+                        "american_odds": -149,
+                        "implied_probability": 0.5988023952095808,
+                        "timestamp_collected": "2025-04-29T17:52:17.446151+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_reds_at_cardinals_20250429",
+                "market_id": "mlb_mlb_reds_at_cardinals_20250429_moneyline_base",
+                "market_type": "MONEYLINE",
+                "raw_market_name": "Moneyline",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": 1.5,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": 1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_reds_at_cardinals_20250429_spread_15",
+                        "decimal_odds": 1.58,
+                        "american_odds": -172,
+                        "implied_probability": 0.6329113924050633,
+                        "timestamp_collected": "2025-04-29T17:52:17.446176+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": -1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_reds_at_cardinals_20250429_spread_15",
+                        "decimal_odds": 2.47,
+                        "american_odds": 147,
+                        "implied_probability": 0.4048582995951417,
+                        "timestamp_collected": "2025-04-29T17:52:17.446187+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_reds_at_cardinals_20250429",
+                "market_id": "mlb_mlb_reds_at_cardinals_20250429_spread_15",
+                "market_type": "SPREAD",
+                "raw_market_name": "Spread (-1.5) - Winner (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": 9.5,
+                "odds": [
+                    {
+                        "line": 9.5,
+                        "side": "OVER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_reds_at_cardinals_20250429_total_95",
+                        "decimal_odds": 1.92,
+                        "american_odds": -108,
+                        "implied_probability": 0.5208333333333334,
+                        "timestamp_collected": "2025-04-29T17:52:17.446213+00:00"
+                    },
+                    {
+                        "line": 9.5,
+                        "side": "UNDER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_reds_at_cardinals_20250429_total_95",
+                        "decimal_odds": 1.93,
+                        "american_odds": -107,
+                        "implied_probability": 0.5181347150259067,
+                        "timestamp_collected": "2025-04-29T17:52:17.44622+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_reds_at_cardinals_20250429",
+                "market_id": "mlb_mlb_reds_at_cardinals_20250429_total_95",
+                "market_type": "TOTAL",
+                "raw_market_name": "Over/Under 9.5 runs (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            }
+        ]
+    },
+    {
+        "game_id": "mlb_mlb_pirates_at_cubs_20250429",
+        "sport": "MLB",
+        "league": "MLB",
+        "start_time_utc": "2025-04-29T22:40:00+00:00",
+        "home_team_id": "cubs",
+        "away_team_id": "pirates",
+        "last_updated_utc": "2025-04-29T17:52:17.446249+00:00",
+        "raw_event_id": "9186909",
+        "markets": [
+            {
+                "line": -1.5,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": -1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_pirates_at_cubs_20250429_spread_15",
+                        "decimal_odds": 2.17,
+                        "american_odds": 116,
+                        "implied_probability": 0.4608294930875576,
+                        "timestamp_collected": "2025-04-29T17:52:17.446298+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": 1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_pirates_at_cubs_20250429_spread_15",
+                        "decimal_odds": 1.73,
+                        "american_odds": -136,
+                        "implied_probability": 0.5780346820809249,
+                        "timestamp_collected": "2025-04-29T17:52:17.446305+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_pirates_at_cubs_20250429",
+                "market_id": "mlb_mlb_pirates_at_cubs_20250429_spread_15",
+                "market_type": "SPREAD",
+                "raw_market_name": "Spread (1.5) - Winner (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": 8.5,
+                "odds": [
+                    {
+                        "line": 8.5,
+                        "side": "OVER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_pirates_at_cubs_20250429_total_85",
+                        "decimal_odds": 1.97,
+                        "american_odds": -103,
+                        "implied_probability": 0.5076142131979695,
+                        "timestamp_collected": "2025-04-29T17:52:17.446332+00:00"
+                    },
+                    {
+                        "line": 8.5,
+                        "side": "UNDER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_pirates_at_cubs_20250429_total_85",
+                        "decimal_odds": 1.88,
+                        "american_odds": -113,
+                        "implied_probability": 0.5319148936170213,
+                        "timestamp_collected": "2025-04-29T17:52:17.446339+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_pirates_at_cubs_20250429",
+                "market_id": "mlb_mlb_pirates_at_cubs_20250429_total_85",
+                "market_type": "TOTAL",
+                "raw_market_name": "Over/Under 8.5 runs (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": null,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_pirates_at_cubs_20250429_moneyline_base",
+                        "decimal_odds": 1.67,
+                        "american_odds": -149,
+                        "implied_probability": 0.5988023952095808,
+                        "timestamp_collected": "2025-04-29T17:52:17.446267+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_pirates_at_cubs_20250429_moneyline_base",
+                        "decimal_odds": 2.2,
+                        "american_odds": 120,
+                        "implied_probability": 0.45454545454545453,
+                        "timestamp_collected": "2025-04-29T17:52:17.446273+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_pirates_at_cubs_20250429",
+                "market_id": "mlb_mlb_pirates_at_cubs_20250429_moneyline_base",
+                "market_type": "MONEYLINE",
+                "raw_market_name": "Moneyline",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            }
+        ]
+    },
+    {
+        "game_id": "mlb_mlb_phillies_at_nationals_20250429",
+        "sport": "MLB",
+        "league": "MLB",
+        "start_time_utc": "2025-04-29T22:45:00+00:00",
+        "home_team_id": "nationals",
+        "away_team_id": "phillies",
+        "last_updated_utc": "2025-04-29T17:52:17.446375+00:00",
+        "raw_event_id": "9186932",
+        "markets": [
+            {
+                "line": null,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_phillies_at_nationals_20250429_moneyline_base",
+                        "decimal_odds": 2.57,
+                        "american_odds": 156,
+                        "implied_probability": 0.38910505836575876,
+                        "timestamp_collected": "2025-04-29T17:52:17.446394+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_phillies_at_nationals_20250429_moneyline_base",
+                        "decimal_odds": 1.5,
+                        "american_odds": -200,
+                        "implied_probability": 0.6666666666666666,
+                        "timestamp_collected": "2025-04-29T17:52:17.446399+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_phillies_at_nationals_20250429",
+                "market_id": "mlb_mlb_phillies_at_nationals_20250429_moneyline_base",
+                "market_type": "MONEYLINE",
+                "raw_market_name": "Moneyline",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": 1.5,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": 1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_phillies_at_nationals_20250429_spread_15",
+                        "decimal_odds": 1.75,
+                        "american_odds": -133,
+                        "implied_probability": 0.5714285714285714,
+                        "timestamp_collected": "2025-04-29T17:52:17.446426+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": -1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_phillies_at_nationals_20250429_spread_15",
+                        "decimal_odds": 2.15,
+                        "american_odds": 114,
+                        "implied_probability": 0.46511627906976744,
+                        "timestamp_collected": "2025-04-29T17:52:17.446433+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_phillies_at_nationals_20250429",
+                "market_id": "mlb_mlb_phillies_at_nationals_20250429_spread_15",
+                "market_type": "SPREAD",
+                "raw_market_name": "Spread (-1.5) - Winner (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": 8.5,
+                "odds": [
+                    {
+                        "line": 8.5,
+                        "side": "OVER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_phillies_at_nationals_20250429_total_85",
+                        "decimal_odds": 1.95,
+                        "american_odds": -105,
+                        "implied_probability": 0.5128205128205128,
+                        "timestamp_collected": "2025-04-29T17:52:17.446457+00:00"
+                    },
+                    {
+                        "line": 8.5,
+                        "side": "UNDER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_phillies_at_nationals_20250429_total_85",
+                        "decimal_odds": 1.88,
+                        "american_odds": -113,
+                        "implied_probability": 0.5319148936170213,
+                        "timestamp_collected": "2025-04-29T17:52:17.446464+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_phillies_at_nationals_20250429",
+                "market_id": "mlb_mlb_phillies_at_nationals_20250429_total_85",
+                "market_type": "TOTAL",
+                "raw_market_name": "Over/Under 8.5 runs (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            }
+        ]
+    },
+    {
+        "game_id": "mlb_mlb_rays_at_royals_20250429",
+        "sport": "MLB",
+        "league": "MLB",
+        "start_time_utc": "2025-04-29T23:05:00+00:00",
+        "home_team_id": "royals",
+        "away_team_id": "rays",
+        "last_updated_utc": "2025-04-29T17:52:17.446495+00:00",
+        "raw_event_id": "8890124",
+        "markets": [
+            {
+                "line": null,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_rays_at_royals_20250429_moneyline_base",
+                        "decimal_odds": 2.25,
+                        "american_odds": 125,
+                        "implied_probability": 0.4444444444444444,
+                        "timestamp_collected": "2025-04-29T17:52:17.446512+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_rays_at_royals_20250429_moneyline_base",
+                        "decimal_odds": 1.63,
+                        "american_odds": -158,
+                        "implied_probability": 0.6134969325153374,
+                        "timestamp_collected": "2025-04-29T17:52:17.446519+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_rays_at_royals_20250429",
+                "market_id": "mlb_mlb_rays_at_royals_20250429_moneyline_base",
+                "market_type": "MONEYLINE",
+                "raw_market_name": "Moneyline",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": 1.5,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": 1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_rays_at_royals_20250429_spread_15",
+                        "decimal_odds": 1.62,
+                        "american_odds": -161,
+                        "implied_probability": 0.6172839506172839,
+                        "timestamp_collected": "2025-04-29T17:52:17.446542+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": -1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_rays_at_royals_20250429_spread_15",
+                        "decimal_odds": 2.4,
+                        "american_odds": 139,
+                        "implied_probability": 0.4166666666666667,
+                        "timestamp_collected": "2025-04-29T17:52:17.446549+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_rays_at_royals_20250429",
+                "market_id": "mlb_mlb_rays_at_royals_20250429_spread_15",
+                "market_type": "SPREAD",
+                "raw_market_name": "Spread (-1.5) - Winner (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": 8.5,
+                "odds": [
+                    {
+                        "line": 8.5,
+                        "side": "OVER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_rays_at_royals_20250429_total_85",
+                        "decimal_odds": 1.83,
+                        "american_odds": -120,
+                        "implied_probability": 0.546448087431694,
+                        "timestamp_collected": "2025-04-29T17:52:17.446576+00:00"
+                    },
+                    {
+                        "line": 8.5,
+                        "side": "UNDER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_rays_at_royals_20250429_total_85",
+                        "decimal_odds": 2.0,
+                        "american_odds": 100,
+                        "implied_probability": 0.5,
+                        "timestamp_collected": "2025-04-29T17:52:17.446583+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_rays_at_royals_20250429",
+                "market_id": "mlb_mlb_rays_at_royals_20250429_total_85",
+                "market_type": "TOTAL",
+                "raw_market_name": "Over/Under 8.5 runs (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            }
+        ]
+    },
+    {
+        "game_id": "mlb_mlb_blue_jays_at_red_sox_20250429",
+        "sport": "MLB",
+        "league": "MLB",
+        "start_time_utc": "2025-04-29T23:07:00+00:00",
+        "home_team_id": "red_sox",
+        "away_team_id": "blue_jays",
+        "last_updated_utc": "2025-04-29T17:52:17.446633+00:00",
+        "raw_event_id": "9186928",
+        "markets": [
+            {
+                "line": null,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_blue_jays_at_red_sox_20250429_moneyline_base",
+                        "decimal_odds": 1.68,
+                        "american_odds": -147,
+                        "implied_probability": 0.5952380952380952,
+                        "timestamp_collected": "2025-04-29T17:52:17.446652+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_blue_jays_at_red_sox_20250429_moneyline_base",
+                        "decimal_odds": 2.17,
+                        "american_odds": 116,
+                        "implied_probability": 0.4608294930875576,
+                        "timestamp_collected": "2025-04-29T17:52:17.446658+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_blue_jays_at_red_sox_20250429",
+                "market_id": "mlb_mlb_blue_jays_at_red_sox_20250429_moneyline_base",
+                "market_type": "MONEYLINE",
+                "raw_market_name": "Moneyline",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": -1.5,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": -1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_blue_jays_at_red_sox_20250429_spread_15",
+                        "decimal_odds": 2.25,
+                        "american_odds": 125,
+                        "implied_probability": 0.4444444444444444,
+                        "timestamp_collected": "2025-04-29T17:52:17.446682+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": 1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_blue_jays_at_red_sox_20250429_spread_15",
+                        "decimal_odds": 1.7,
+                        "american_odds": -142,
+                        "implied_probability": 0.5882352941176471,
+                        "timestamp_collected": "2025-04-29T17:52:17.446689+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_blue_jays_at_red_sox_20250429",
+                "market_id": "mlb_mlb_blue_jays_at_red_sox_20250429_spread_15",
+                "market_type": "SPREAD",
+                "raw_market_name": "Spread (1.5) - Winner (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": 7.5,
+                "odds": [
+                    {
+                        "line": 7.5,
+                        "side": "OVER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_blue_jays_at_red_sox_20250429_total_75",
+                        "decimal_odds": 1.88,
+                        "american_odds": -113,
+                        "implied_probability": 0.5319148936170213,
+                        "timestamp_collected": "2025-04-29T17:52:17.446712+00:00"
+                    },
+                    {
+                        "line": 7.5,
+                        "side": "UNDER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_blue_jays_at_red_sox_20250429_total_75",
+                        "decimal_odds": 1.97,
+                        "american_odds": -103,
+                        "implied_probability": 0.5076142131979695,
+                        "timestamp_collected": "2025-04-29T17:52:17.446719+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_blue_jays_at_red_sox_20250429",
+                "market_id": "mlb_mlb_blue_jays_at_red_sox_20250429_total_75",
+                "market_type": "TOTAL",
+                "raw_market_name": "Over/Under 7.5 runs (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            }
+        ]
+    },
+    {
+        "game_id": "mlb_mlb_mets_at_diamondbacks_20250429",
+        "sport": "MLB",
+        "league": "MLB",
+        "start_time_utc": "2025-04-29T23:10:00+00:00",
+        "home_team_id": "diamondbacks",
+        "away_team_id": "mets",
+        "last_updated_utc": "2025-04-29T17:52:17.446748+00:00",
+        "raw_event_id": "9186924",
+        "markets": [
+            {
+                "line": 1.5,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": 1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_mets_at_diamondbacks_20250429_spread_15",
+                        "decimal_odds": 1.57,
+                        "american_odds": -175,
+                        "implied_probability": 0.6369426751592356,
+                        "timestamp_collected": "2025-04-29T17:52:17.446769+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": -1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_mets_at_diamondbacks_20250429_spread_15",
+                        "decimal_odds": 2.5,
+                        "american_odds": 150,
+                        "implied_probability": 0.4,
+                        "timestamp_collected": "2025-04-29T17:52:17.446829+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_mets_at_diamondbacks_20250429",
+                "market_id": "mlb_mlb_mets_at_diamondbacks_20250429_spread_15",
+                "market_type": "SPREAD",
+                "raw_market_name": "Spread (-1.5) - Winner (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": 8.5,
+                "odds": [
+                    {
+                        "line": 8.5,
+                        "side": "OVER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_mets_at_diamondbacks_20250429_total_85",
+                        "decimal_odds": 1.88,
+                        "american_odds": -113,
+                        "implied_probability": 0.5319148936170213,
+                        "timestamp_collected": "2025-04-29T17:52:17.446857+00:00"
+                    },
+                    {
+                        "line": 8.5,
+                        "side": "UNDER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_mets_at_diamondbacks_20250429_total_85",
+                        "decimal_odds": 1.98,
+                        "american_odds": -102,
+                        "implied_probability": 0.5050505050505051,
+                        "timestamp_collected": "2025-04-29T17:52:17.446864+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_mets_at_diamondbacks_20250429",
+                "market_id": "mlb_mlb_mets_at_diamondbacks_20250429_total_85",
+                "market_type": "TOTAL",
+                "raw_market_name": "Over/Under 8.5 runs (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            }
+        ]
+    },
+    {
+        "game_id": "mlb_mlb_white_sox_at_brewers_20250429",
+        "sport": "MLB",
+        "league": "MLB",
+        "start_time_utc": "2025-04-29T23:40:00+00:00",
+        "home_team_id": "brewers",
+        "away_team_id": "white_sox",
+        "last_updated_utc": "2025-04-29T17:52:17.447274+00:00",
+        "raw_event_id": "8890125",
+        "markets": [
+            {
+                "line": -2.5,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": -2.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_white_sox_at_brewers_20250429_spread_25",
+                        "decimal_odds": 2.17,
+                        "american_odds": 116,
+                        "implied_probability": 0.4608294930875576,
+                        "timestamp_collected": "2025-04-29T17:52:17.447341+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": 2.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_white_sox_at_brewers_20250429_spread_25",
+                        "decimal_odds": 1.73,
+                        "american_odds": -136,
+                        "implied_probability": 0.5780346820809249,
+                        "timestamp_collected": "2025-04-29T17:52:17.447348+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_white_sox_at_brewers_20250429",
+                "market_id": "mlb_mlb_white_sox_at_brewers_20250429_spread_25",
+                "market_type": "SPREAD",
+                "raw_market_name": "Spread (2.5) - Winner (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:58:48.7632+00:00"
+            },
+            {
+                "line": null,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_white_sox_at_brewers_20250429_moneyline_base",
+                        "decimal_odds": 1.38,
+                        "american_odds": -263,
+                        "implied_probability": 0.7246376811594203,
+                        "timestamp_collected": "2025-04-29T17:52:17.4473+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_white_sox_at_brewers_20250429_moneyline_base",
+                        "decimal_odds": 3.05,
+                        "american_odds": 204,
+                        "implied_probability": 0.32786885245901637,
+                        "timestamp_collected": "2025-04-29T17:52:17.447308+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_white_sox_at_brewers_20250429",
+                "market_id": "mlb_mlb_white_sox_at_brewers_20250429_moneyline_base",
+                "market_type": "MONEYLINE",
+                "raw_market_name": "Moneyline",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": -1.5,
+                "odds": [],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_white_sox_at_brewers_20250429",
+                "market_id": "mlb_mlb_white_sox_at_brewers_20250429_spread_15",
+                "market_type": "SPREAD",
+                "raw_market_name": "Spread (1.5) - Winner (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": 7.5,
+                "odds": [
+                    {
+                        "line": 7.5,
+                        "side": "OVER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_white_sox_at_brewers_20250429_total_75",
+                        "decimal_odds": 1.83,
+                        "american_odds": -120,
+                        "implied_probability": 0.546448087431694,
+                        "timestamp_collected": "2025-04-29T17:52:17.447697+00:00"
+                    },
+                    {
+                        "line": 7.5,
+                        "side": "UNDER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_white_sox_at_brewers_20250429_total_75",
+                        "decimal_odds": 2.02,
+                        "american_odds": 102,
+                        "implied_probability": 0.49504950495049505,
+                        "timestamp_collected": "2025-04-29T17:52:17.447706+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_white_sox_at_brewers_20250429",
+                "market_id": "mlb_mlb_white_sox_at_brewers_20250429_total_75",
+                "market_type": "TOTAL",
+                "raw_market_name": "Over/Under 7.5 runs (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            }
+        ]
+    },
+    {
+        "game_id": "mlb_mlb_rangers_at_athletics_20250430",
+        "sport": "MLB",
+        "league": "MLB",
+        "start_time_utc": "2025-04-30T00:05:00+00:00",
+        "home_team_id": "athletics",
+        "away_team_id": "rangers",
+        "last_updated_utc": "2025-04-29T17:52:17.44775+00:00",
+        "raw_event_id": "9186908",
+        "markets": [
+            {
+                "line": null,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_rangers_at_athletics_20250430_moneyline_base",
+                        "decimal_odds": 2.7,
+                        "american_odds": 170,
+                        "implied_probability": 0.37037037037037035,
+                        "timestamp_collected": "2025-04-29T17:52:17.447776+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_rangers_at_athletics_20250430_moneyline_base",
+                        "decimal_odds": 1.47,
+                        "american_odds": -212,
+                        "implied_probability": 0.6802721088435374,
+                        "timestamp_collected": "2025-04-29T17:52:17.447783+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_rangers_at_athletics_20250430",
+                "market_id": "mlb_mlb_rangers_at_athletics_20250430_moneyline_base",
+                "market_type": "MONEYLINE",
+                "raw_market_name": "Moneyline",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": 1.5,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": 1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_rangers_at_athletics_20250430_spread_15",
+                        "decimal_odds": 1.81,
+                        "american_odds": -123,
+                        "implied_probability": 0.5524861878453039,
+                        "timestamp_collected": "2025-04-29T17:52:17.447811+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": -1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_rangers_at_athletics_20250430_spread_15",
+                        "decimal_odds": 2.05,
+                        "american_odds": 104,
+                        "implied_probability": 0.4878048780487805,
+                        "timestamp_collected": "2025-04-29T17:52:17.447818+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_rangers_at_athletics_20250430",
+                "market_id": "mlb_mlb_rangers_at_athletics_20250430_spread_15",
+                "market_type": "SPREAD",
+                "raw_market_name": "Spread (-1.5) - Winner (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": 8.5,
+                "odds": [
+                    {
+                        "line": 8.5,
+                        "side": "OVER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_rangers_at_athletics_20250430_total_85",
+                        "decimal_odds": 2.0,
+                        "american_odds": 100,
+                        "implied_probability": 0.5,
+                        "timestamp_collected": "2025-04-29T17:52:17.447917+00:00"
+                    },
+                    {
+                        "line": 8.5,
+                        "side": "UNDER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_rangers_at_athletics_20250430_total_85",
+                        "decimal_odds": 1.83,
+                        "american_odds": -120,
+                        "implied_probability": 0.546448087431694,
+                        "timestamp_collected": "2025-04-29T17:52:17.447925+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_rangers_at_athletics_20250430",
+                "market_id": "mlb_mlb_rangers_at_athletics_20250430_total_85",
+                "market_type": "TOTAL",
+                "raw_market_name": "Over/Under 8.5 runs (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            }
+        ]
+    },
+    {
+        "game_id": "mlb_mlb_astros_at_tigers_20250430",
+        "sport": "MLB",
+        "league": "MLB",
+        "start_time_utc": "2025-04-30T00:10:00+00:00",
+        "home_team_id": "tigers",
+        "away_team_id": "astros",
+        "last_updated_utc": "2025-04-29T17:52:17.447958+00:00",
+        "raw_event_id": "8890133",
+        "markets": [
+            {
+                "line": null,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_astros_at_tigers_20250430_moneyline_base",
+                        "decimal_odds": 1.99,
+                        "american_odds": -101,
+                        "implied_probability": 0.5025125628140703,
+                        "timestamp_collected": "2025-04-29T17:52:17.447977+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_astros_at_tigers_20250430_moneyline_base",
+                        "decimal_odds": 1.82,
+                        "american_odds": -121,
+                        "implied_probability": 0.5494505494505495,
+                        "timestamp_collected": "2025-04-29T17:52:17.447984+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_astros_at_tigers_20250430",
+                "market_id": "mlb_mlb_astros_at_tigers_20250430_moneyline_base",
+                "market_type": "MONEYLINE",
+                "raw_market_name": "Moneyline",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": -1.5,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": -1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_astros_at_tigers_20250430_spread_15",
+                        "decimal_odds": 2.7,
+                        "american_odds": 170,
+                        "implied_probability": 0.37037037037037035,
+                        "timestamp_collected": "2025-04-29T17:52:17.448009+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": 1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_astros_at_tigers_20250430_spread_15",
+                        "decimal_odds": 1.51,
+                        "american_odds": -196,
+                        "implied_probability": 0.6622516556291391,
+                        "timestamp_collected": "2025-04-29T17:52:17.448015+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_astros_at_tigers_20250430",
+                "market_id": "mlb_mlb_astros_at_tigers_20250430_spread_15",
+                "market_type": "SPREAD",
+                "raw_market_name": "Spread (1.5) - Winner (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": 7.5,
+                "odds": [
+                    {
+                        "line": 7.5,
+                        "side": "OVER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_astros_at_tigers_20250430_total_75",
+                        "decimal_odds": 1.83,
+                        "american_odds": -120,
+                        "implied_probability": 0.546448087431694,
+                        "timestamp_collected": "2025-04-29T17:52:17.448052+00:00"
+                    },
+                    {
+                        "line": 7.5,
+                        "side": "UNDER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_astros_at_tigers_20250430_total_75",
+                        "decimal_odds": 2.05,
+                        "american_odds": 104,
+                        "implied_probability": 0.4878048780487805,
+                        "timestamp_collected": "2025-04-29T17:52:17.448059+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_astros_at_tigers_20250430",
+                "market_id": "mlb_mlb_astros_at_tigers_20250430_total_75",
+                "market_type": "TOTAL",
+                "raw_market_name": "Over/Under 7.5 runs (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            }
+        ]
+    },
+    {
+        "game_id": "mlb_mlb_rockies_at_braves_20250430",
+        "sport": "MLB",
+        "league": "MLB",
+        "start_time_utc": "2025-04-30T00:40:00+00:00",
+        "home_team_id": "braves",
+        "away_team_id": "rockies",
+        "last_updated_utc": "2025-04-29T17:52:17.448091+00:00",
+        "raw_event_id": "9186918",
+        "markets": [
+            {
+                "line": null,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_rockies_at_braves_20250430_moneyline_base",
+                        "decimal_odds": 1.48,
+                        "american_odds": -208,
+                        "implied_probability": 0.6756756756756757,
+                        "timestamp_collected": "2025-04-29T17:52:17.44811+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_rockies_at_braves_20250430_moneyline_base",
+                        "decimal_odds": 2.65,
+                        "american_odds": 164,
+                        "implied_probability": 0.37735849056603776,
+                        "timestamp_collected": "2025-04-29T17:52:17.448116+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_rockies_at_braves_20250430",
+                "market_id": "mlb_mlb_rockies_at_braves_20250430_moneyline_base",
+                "market_type": "MONEYLINE",
+                "raw_market_name": "Moneyline",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": -1.5,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": -1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_rockies_at_braves_20250430_spread_15",
+                        "decimal_odds": 1.77,
+                        "american_odds": -129,
+                        "implied_probability": 0.5649717514124294,
+                        "timestamp_collected": "2025-04-29T17:52:17.448141+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": 1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_rockies_at_braves_20250430_spread_15",
+                        "decimal_odds": 2.1,
+                        "american_odds": 110,
+                        "implied_probability": 0.47619047619047616,
+                        "timestamp_collected": "2025-04-29T17:52:17.448149+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_rockies_at_braves_20250430",
+                "market_id": "mlb_mlb_rockies_at_braves_20250430_spread_15",
+                "market_type": "SPREAD",
+                "raw_market_name": "Spread (1.5) - Winner (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": 10.5,
+                "odds": [
+                    {
+                        "line": 10.5,
+                        "side": "OVER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_rockies_at_braves_20250430_total_105",
+                        "decimal_odds": 1.82,
+                        "american_odds": -121,
+                        "implied_probability": 0.5494505494505495,
+                        "timestamp_collected": "2025-04-29T17:52:17.448174+00:00"
+                    },
+                    {
+                        "line": 10.5,
+                        "side": "UNDER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_rockies_at_braves_20250430_total_105",
+                        "decimal_odds": 2.05,
+                        "american_odds": 104,
+                        "implied_probability": 0.4878048780487805,
+                        "timestamp_collected": "2025-04-29T17:52:17.448182+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_rockies_at_braves_20250430",
+                "market_id": "mlb_mlb_rockies_at_braves_20250430_total_105",
+                "market_type": "TOTAL",
+                "raw_market_name": "Over/Under 10.5 runs (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            }
+        ]
+    },
+    {
+        "game_id": "mlb_mlb_padres_at_giants_20250430",
+        "sport": "MLB",
+        "league": "MLB",
+        "start_time_utc": "2025-04-30T01:40:00+00:00",
+        "home_team_id": "giants",
+        "away_team_id": "padres",
+        "last_updated_utc": "2025-04-29T17:52:17.448211+00:00",
+        "raw_event_id": "9186931",
+        "markets": [
+            {
+                "line": null,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_padres_at_giants_20250430_moneyline_base",
+                        "decimal_odds": 1.77,
+                        "american_odds": -129,
+                        "implied_probability": 0.5649717514124294,
+                        "timestamp_collected": "2025-04-29T17:52:17.448232+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_padres_at_giants_20250430_moneyline_base",
+                        "decimal_odds": 2.05,
+                        "american_odds": 104,
+                        "implied_probability": 0.4878048780487805,
+                        "timestamp_collected": "2025-04-29T17:52:17.448237+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_padres_at_giants_20250430",
+                "market_id": "mlb_mlb_padres_at_giants_20250430_moneyline_base",
+                "market_type": "MONEYLINE",
+                "raw_market_name": "Moneyline",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": -1.5,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": -1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_padres_at_giants_20250430_spread_15",
+                        "decimal_odds": 2.45,
+                        "american_odds": 145,
+                        "implied_probability": 0.40816326530612246,
+                        "timestamp_collected": "2025-04-29T17:52:17.448261+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": 1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_padres_at_giants_20250430_spread_15",
+                        "decimal_odds": 1.58,
+                        "american_odds": -172,
+                        "implied_probability": 0.6329113924050633,
+                        "timestamp_collected": "2025-04-29T17:52:17.448268+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_padres_at_giants_20250430",
+                "market_id": "mlb_mlb_padres_at_giants_20250430_spread_15",
+                "market_type": "SPREAD",
+                "raw_market_name": "Spread (1.5) - Winner (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": 6.5,
+                "odds": [
+                    {
+                        "line": 6.5,
+                        "side": "OVER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_padres_at_giants_20250430_total_65",
+                        "decimal_odds": 1.8,
+                        "american_odds": -124,
+                        "implied_probability": 0.5555555555555556,
+                        "timestamp_collected": "2025-04-29T17:52:17.448291+00:00"
+                    },
+                    {
+                        "line": 6.5,
+                        "side": "UNDER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_padres_at_giants_20250430_total_65",
+                        "decimal_odds": 2.07,
+                        "american_odds": 106,
+                        "implied_probability": 0.4830917874396135,
+                        "timestamp_collected": "2025-04-29T17:52:17.448298+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_padres_at_giants_20250430",
+                "market_id": "mlb_mlb_padres_at_giants_20250430_total_65",
+                "market_type": "TOTAL",
+                "raw_market_name": "Over/Under 6.5 runs (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            }
+        ]
+    },
+    {
+        "game_id": "mlb_mlb_mariners_at_angels_20250430",
+        "sport": "MLB",
+        "league": "MLB",
+        "start_time_utc": "2025-04-30T01:40:00+00:00",
+        "home_team_id": "angels",
+        "away_team_id": "mariners",
+        "last_updated_utc": "2025-04-29T17:52:17.448324+00:00",
+        "raw_event_id": "9186922",
+        "markets": [
+            {
+                "line": null,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_mariners_at_angels_20250430_moneyline_base",
+                        "decimal_odds": 2.65,
+                        "american_odds": 164,
+                        "implied_probability": 0.37735849056603776,
+                        "timestamp_collected": "2025-04-29T17:52:17.448342+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_mariners_at_angels_20250430_moneyline_base",
+                        "decimal_odds": 1.48,
+                        "american_odds": -208,
+                        "implied_probability": 0.6756756756756757,
+                        "timestamp_collected": "2025-04-29T17:52:17.448347+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_mariners_at_angels_20250430",
+                "market_id": "mlb_mlb_mariners_at_angels_20250430_moneyline_base",
+                "market_type": "MONEYLINE",
+                "raw_market_name": "Moneyline",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": 1.5,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": 1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_mariners_at_angels_20250430_spread_15",
+                        "decimal_odds": 1.73,
+                        "american_odds": -136,
+                        "implied_probability": 0.5780346820809249,
+                        "timestamp_collected": "2025-04-29T17:52:17.448372+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": -1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_mariners_at_angels_20250430_spread_15",
+                        "decimal_odds": 2.17,
+                        "american_odds": 116,
+                        "implied_probability": 0.4608294930875576,
+                        "timestamp_collected": "2025-04-29T17:52:17.448378+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_mariners_at_angels_20250430",
+                "market_id": "mlb_mlb_mariners_at_angels_20250430_spread_15",
+                "market_type": "SPREAD",
+                "raw_market_name": "Spread (-1.5) - Winner (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": 7.5,
+                "odds": [
+                    {
+                        "line": 7.5,
+                        "side": "OVER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_mariners_at_angels_20250430_total_75",
+                        "decimal_odds": 1.88,
+                        "american_odds": -113,
+                        "implied_probability": 0.5319148936170213,
+                        "timestamp_collected": "2025-04-29T17:52:17.448401+00:00"
+                    },
+                    {
+                        "line": 7.5,
+                        "side": "UNDER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_mariners_at_angels_20250430_total_75",
+                        "decimal_odds": 1.95,
+                        "american_odds": -105,
+                        "implied_probability": 0.5128205128205128,
+                        "timestamp_collected": "2025-04-29T17:52:17.448408+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_mariners_at_angels_20250430",
+                "market_id": "mlb_mlb_mariners_at_angels_20250430_total_75",
+                "market_type": "TOTAL",
+                "raw_market_name": "Over/Under 7.5 runs (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            }
+        ]
+    },
+    {
+        "game_id": "mlb_mlb_dodgers_at_marlins_20250430",
+        "sport": "MLB",
+        "league": "MLB",
+        "start_time_utc": "2025-04-30T02:10:00+00:00",
+        "home_team_id": "marlins",
+        "away_team_id": "dodgers",
+        "last_updated_utc": "2025-04-29T17:52:17.448434+00:00",
+        "raw_event_id": "9186927",
+        "markets": [
+            {
+                "line": null,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_dodgers_at_marlins_20250430_moneyline_base",
+                        "decimal_odds": 2.65,
+                        "american_odds": 164,
+                        "implied_probability": 0.37735849056603776,
+                        "timestamp_collected": "2025-04-29T17:52:17.448451+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_dodgers_at_marlins_20250430_moneyline_base",
+                        "decimal_odds": 1.48,
+                        "american_odds": -208,
+                        "implied_probability": 0.6756756756756757,
+                        "timestamp_collected": "2025-04-29T17:52:17.448456+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_dodgers_at_marlins_20250430",
+                "market_id": "mlb_mlb_dodgers_at_marlins_20250430_moneyline_base",
+                "market_type": "MONEYLINE",
+                "raw_market_name": "Moneyline",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": 1.5,
+                "odds": [
+                    {
+                        "line": null,
+                        "side": "HOME",
+                        "points": 1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_dodgers_at_marlins_20250430_spread_15",
+                        "decimal_odds": 1.81,
+                        "american_odds": -123,
+                        "implied_probability": 0.5524861878453039,
+                        "timestamp_collected": "2025-04-29T17:52:17.448481+00:00"
+                    },
+                    {
+                        "line": null,
+                        "side": "AWAY",
+                        "points": -1.5,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_dodgers_at_marlins_20250430_spread_15",
+                        "decimal_odds": 2.07,
+                        "american_odds": 106,
+                        "implied_probability": 0.4830917874396135,
+                        "timestamp_collected": "2025-04-29T17:52:17.448488+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_dodgers_at_marlins_20250430",
+                "market_id": "mlb_mlb_dodgers_at_marlins_20250430_spread_15",
+                "market_type": "SPREAD",
+                "raw_market_name": "Spread (-1.5) - Winner (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            },
+            {
+                "line": 8.5,
+                "odds": [
+                    {
+                        "line": 8.5,
+                        "side": "OVER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_dodgers_at_marlins_20250430_total_85",
+                        "decimal_odds": 1.9,
+                        "american_odds": -111,
+                        "implied_probability": 0.5263157894736842,
+                        "timestamp_collected": "2025-04-29T17:52:17.448511+00:00"
+                    },
+                    {
+                        "line": 8.5,
+                        "side": "UNDER",
+                        "points": null,
+                        "bookmaker": "CrabSports",
+                        "market_id": "mlb_mlb_dodgers_at_marlins_20250430_total_85",
+                        "decimal_odds": 1.95,
+                        "american_odds": -105,
+                        "implied_probability": 0.5128205128205128,
+                        "timestamp_collected": "2025-04-29T17:52:17.448518+00:00"
+                    }
+                ],
+                "period": "FULL_GAME",
+                "game_id": "mlb_mlb_dodgers_at_marlins_20250430",
+                "market_id": "mlb_mlb_dodgers_at_marlins_20250430_total_85",
+                "market_type": "TOTAL",
+                "raw_market_name": "Over/Under 8.5 runs (inc extra inning)",
+                "last_updated_utc": "2025-04-29T16:36:46.246164+00:00"
+            }
+        ]
+    }
+]

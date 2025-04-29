@@ -46,6 +46,17 @@ class AppSettings(BaseSettings):
         case_sensitive=False,
     )
 
+    # Betting Strategy Configuration
+    KELLY_FRACTION_CAP: float = 0.01
+    MIN_EV_THRESHOLD: float = 0.01
+
+    # Supabase Configuration
+    SUPABASE_URL: Optional[str] = None
+    SUPABASE_KEY: Optional[str] = None
+
+    # Logging Configuration
+    LOG_LEVEL: str = "INFO"
+
 
 def load_settings() -> AppSettings:
     """Loads and validates application settings."""

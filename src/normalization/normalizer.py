@@ -405,20 +405,33 @@ class Normalizer:
                             f"Processing Market: {market.market_id} ({market.market_type.value}, Line: {market.line})",
                         )
 
-                        for side, price, raw_label, _ in processed_outcomes:
+                        for side, price, raw_label, outcome_line in processed_outcomes:
+                            # Extract specific points for this side if it's a spread market
+                            points_value: Optional[Decimal] = None
+                            # Extract specific line for this side if it's a total market
+                            line_value: Optional[Decimal] = None
+
+                            if market_type == MarketType.SPREAD:
+                                points_value = self._extract_points_from_outcome_label(
+                                    raw_label
+                                )
+                            elif market_type == MarketType.TOTAL:
+                                line_value = self._extract_line_from_label(raw_label)
+
                             odds = Odds(
                                 market_id=market_id,
                                 bookmaker=bookmaker,
+                                side=side,
+                                points=points_value,
+                                line=line_value,
                                 decimal_odds=price,
                                 timestamp_collected=datetime.now(timezone.utc),
                             )
+
                             logger.debug(
                                 f"Type of market object before appending odds: {type(market)}"
                             )
                             market.odds.append(odds)
-                            logger.debug(
-                                f"Added Odds: MarketID={market_id}, Price={odds.decimal_odds}"
-                            )
 
                         logger.debug(
                             f"Type of market object before checking odds: {type(market)}"
@@ -574,6 +587,25 @@ class Normalizer:
                     pass
 
         # logger.log("SPAM", f"Could not extract line from label: {label}") # Too noisy
+        return None
+
+    def _extract_points_from_outcome_label(
+        self, label: Optional[str]
+    ) -> Optional[Decimal]:
+        """Attempts to extract spread points (like -1.5 or +7.5) from an outcome label."""
+        if not label:
+            return None
+        # Regex to find a signed number (int or float) within parentheses
+        # Handles \"Team Name (-1.5)\", \"Team Name (+7.0)\", \"Team Name (3.5)\"
+        # Using raw string r\"...\" to avoid potential issues with backslash escaping
+        match = re.search(r"\(([+-]?\d*\.?\d+)\)", label)
+        if match:
+            try:
+                return Decimal(match.group(1))
+            except (InvalidOperation, ValueError, TypeError):
+                logger.warning(
+                    f"Found potential points in label '{label}' but failed to parse: {match.group(1)}"
+                )
         return None
 
     def _map_market_side(
