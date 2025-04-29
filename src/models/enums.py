@@ -5,6 +5,12 @@ class Sport(str, Enum):
     NBA = "NBA"
     NHL = "NHL"
     MLB = "MLB"
+    NFL = "NFL"
+    NCAAF = "NCAAF"
+    WNBA = "WNBA"
+    MLS = "MLS"
+    SOCCER = "Soccer"
+    TENNIS = "Tennis"
     # Add more sports as needed
 
 
@@ -37,7 +43,8 @@ class Period(str, Enum):
 
 
 class Bookmaker(str, Enum):
-    PINNACLE = "Pinnacle"
-    CRAB_SPORTS = "CrabSports"
-    UNKNOWN = "Unknown"
+    PINNACLE = "PINNACLE"
+    CRAB_SPORTS = "CRAB_SPORTS"
+    UNKNOWN = "UNKNOWN"
+    TBD_BOOK = "TBD_BOOK"  # Placeholder
     # Add other bookmakers as needed

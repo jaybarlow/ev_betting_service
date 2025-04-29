@@ -13,6 +13,7 @@ from src.models.game import Game, Team
 from src.models.market import Market
 from src.models.odds import Odds
 from src.utils.misc_utils import generate_canonical_id
+from src.utils.calcs import american_to_decimal  # <-- Import converter
 
 # Type alias for the output of normalization
 NormalizedData = Tuple[List[Game], List[Market], List[Odds]]
@@ -28,8 +29,24 @@ class Normalizer:
     """Handles normalization of raw data from different bookmakers."""
 
     def __init__(self):
-        # TODO: Initialize any necessary mapping tables (e.g., team aliases)
-        self.team_aliases: Dict[str, str] = {}
+        # Initialize team aliases mapping
+        # Key: lowercased raw name, Value: desired canonical name
+        self.team_aliases: Dict[str, str] = {
+            # NBA Examples
+            "knicks": "new york knicks",
+            "nyk": "new york knicks",
+            "pistons": "detroit pistons",
+            "det": "detroit pistons",
+            "nets": "brooklyn nets",
+            "bkn": "brooklyn nets",
+            "celtics": "boston celtics",
+            "bos": "boston celtics",
+            "lakers": "los angeles lakers",
+            "lal": "los angeles lakers",
+            "clippers": "los angeles clippers",
+            "lac": "los angeles clippers",
+            # Add more aliases for all relevant teams/sports
+        }
         self.market_aliases: Dict[str, MarketType] = {
             # Example aliases - needs population based on actual data
             "moneyline": MarketType.MONEYLINE,
@@ -46,6 +63,9 @@ class Normalizer:
             "over under": MarketType.TOTAL,
         }
         logger.info("Normalizer initialized.")
+        logger.info(
+            f"Normalizer initialized with {len(self.team_aliases)} team aliases."
+        )
 
     def normalize(
         self, raw_data_by_book: Dict[Bookmaker, List[Dict[str, Any]]]
@@ -83,9 +103,12 @@ class Normalizer:
                         normalized_games_for_book.extend(
                             self._normalize_crabsports_data(raw_response_dict)
                         )
-                # TODO: Add handlers for other bookmakers (Pinnacle, TBD)
-                # elif bookmaker == Bookmaker.PINNACLE:
-                #     normalized_games_for_book = self._normalize_pinnacle_data(raw_data)
+                elif bookmaker == Bookmaker.PINNACLE:
+                    # Pinnacle scraper returns a list of dicts, each with 'matchups' and 'markets' for a league
+                    for raw_league_data in raw_responses:
+                        normalized_games_for_book.extend(
+                            self._normalize_pinnacle_data(raw_league_data)
+                        )
                 else:
                     logger.warning(
                         f"Normalization not implemented for bookmaker: {bookmaker.value}"
@@ -479,6 +502,349 @@ class Normalizer:
             f"Finished normalization for this Crab Sports response. Produced {len(normalized_games)} Game objects."
         )
         return normalized_games
+
+    def _normalize_pinnacle_data(self, raw_league_data: Dict[str, Any]) -> List[Game]:
+        """Normalizes the raw dictionary structure from Pinnacle API response for a specific league."""
+        normalized_games: List[Game] = []
+        bookmaker = Bookmaker.PINNACLE
+
+        raw_matchups = raw_league_data.get("matchups", [])
+        raw_markets = raw_league_data.get("markets", [])
+        league_id_api = raw_league_data.get(
+            "league_id", "UNKNOWN"
+        )  # Get league ID for context
+
+        if not raw_matchups or not raw_markets:
+            logger.warning(
+                f"Missing 'matchups' or 'markets' data for Pinnacle league {league_id_api}. Skipping."
+            )
+            return []
+
+        logger.debug(
+            f"Normalizing {len(raw_matchups)} matchups and {len(raw_markets)} markets for Pinnacle league {league_id_api}"
+        )
+
+        # Create a lookup for markets by matchupId for faster access
+        markets_by_matchup: Dict[int, List[Dict[str, Any]]] = {}
+        for market_item in raw_markets:
+            matchup_id = market_item.get("matchupId")
+            if matchup_id:
+                if matchup_id not in markets_by_matchup:
+                    markets_by_matchup[matchup_id] = []
+                markets_by_matchup[matchup_id].append(market_item)
+
+        # Process matchups (games)
+        for raw_matchup in raw_matchups:
+            if not isinstance(raw_matchup, dict):
+                continue
+
+            # --- Game Info Extraction ---
+            try:
+                # Pinnacle uses 'parentId' for matchup ID in some cases, fallback to 'id'
+                # The original github code logic seemed complex here, simplifying to use parentId if present.
+                # Revisit if this doesn't capture all games.
+                pin_matchup_id = raw_matchup.get("parentId")
+                if not pin_matchup_id:
+                    pin_matchup_id = raw_matchup.get("id")
+
+                if not pin_matchup_id:
+                    logger.warning(
+                        f"Skipping Pinnacle matchup due to missing id/parentId: {raw_matchup}"
+                    )
+                    continue
+
+                league_info = raw_matchup.get("league", {})
+                league_name = league_info.get("name")
+                sport_name = league_info.get("sport", {}).get("name")
+
+                # Time is nested under periods[0]
+                periods = raw_matchup.get("periods", [{}])
+                start_time_str = periods[0].get("cutoffAt") if periods else None
+
+                # --- Extract Participants (Teams) ---
+                # Participants might be directly in the matchup or nested in 'parent'
+                participants = raw_matchup.get("participants")
+                if not participants:
+                    parent_data = raw_matchup.get("parent")  # Get parent, might be None
+                    # Only try to get participants if parent_data is a dictionary
+                    if isinstance(parent_data, dict):
+                        participants = parent_data.get("participants")
+
+                if not participants or len(participants) < 2:
+                    logger.warning(
+                        f"Could not determine teams for Pinnacle matchup {pin_matchup_id}. Data: {participants}. Skipping."
+                    )
+                    continue
+
+                home_team_name = None
+                away_team_name = None
+                if isinstance(participants, list) and len(participants) == 2:
+                    # Assuming [0] is home, [1] is away IF alignment is not neutral
+                    # Need to check 'alignment'
+                    if (
+                        participants[0].get("alignment") == "home"
+                        and participants[1].get("alignment") == "away"
+                    ):
+                        home_team_name = participants[0].get("name")
+                        away_team_name = participants[1].get("name")
+                    elif (
+                        participants[0].get("alignment") == "away"
+                        and participants[1].get("alignment") == "home"
+                    ):
+                        home_team_name = participants[1].get("name")
+                        away_team_name = participants[0].get("name")
+                    else:  # Fallback if alignment isn't clear, rely on order (less reliable)
+                        logger.debug(
+                            f"Using participant order fallback for Pinnacle teams in matchup {pin_matchup_id}"
+                        )
+                        home_team_name = participants[0].get("name")
+                        away_team_name = participants[1].get("name")
+
+                if not home_team_name or not away_team_name:
+                    logger.warning(
+                        f"Could not determine teams for Pinnacle matchup {pin_matchup_id}. Data: {participants}. Skipping."
+                    )
+                    continue
+
+                # --- Map & Parse Game Info ---
+                sport = self._map_sport(sport_name)
+                league = self._map_league(league_name, sport)
+                start_time = self._parse_datetime(start_time_str)
+
+                if not sport or not league or not start_time:
+                    logger.warning(
+                        f"Skipping Pinnacle matchup {pin_matchup_id} due to missing/unmappable core info (Sport: {sport_name}, League: {league_name}, Start: {start_time_str})"
+                    )
+                    continue
+
+                # --- Generate IDs and Create Objects ---
+                home_team_id = generate_canonical_id(home_team_name)
+                away_team_id = generate_canonical_id(away_team_name)
+                game_id = generate_canonical_id(
+                    f"{sport.value}_{league.value}_{away_team_id}_at_{home_team_id}_{start_time.strftime('%Y%m%d')}"
+                )
+
+                home_team = Team(
+                    team_id=home_team_id,
+                    raw_name=home_team_name,
+                    canonical_name=self._get_canonical_team_name(home_team_name),
+                )
+                away_team = Team(
+                    team_id=away_team_id,
+                    raw_name=away_team_name,
+                    canonical_name=self._get_canonical_team_name(away_team_name),
+                )
+
+                game = Game(
+                    game_id=game_id,
+                    bookmaker=bookmaker,
+                    sport=sport,
+                    league=league,
+                    start_time_utc=start_time,
+                    home_team=home_team,
+                    away_team=away_team,
+                    raw_event_id=str(pin_matchup_id),
+                    markets=[],
+                )
+                logger.debug(
+                    f"Processing Pinnacle Game: {game.game_id} ({away_team.raw_name} @ {home_team.raw_name}) - API ID: {pin_matchup_id}"
+                )
+
+                # --- Process Markets for this Game ---
+                game_markets = markets_by_matchup.get(pin_matchup_id, [])
+                for raw_market in game_markets:
+                    if not isinstance(raw_market, dict):
+                        continue
+
+                    try:
+                        market_type_raw = raw_market.get("type")
+                        period_raw = raw_market.get("period")  # 0 for Full Game
+                        prices = raw_market.get("prices", [])
+
+                        # We only care about full game (period 0) for now
+                        if period_raw != 0:
+                            continue
+
+                        # Map market type
+                        market_type = self._map_pinnacle_market_type(market_type_raw)
+                        if not market_type:
+                            logger.debug(
+                                f"Skipping unknown Pinnacle market type '{market_type_raw}' for matchup {pin_matchup_id}"
+                            )
+                            continue
+
+                        # Expect exactly 2 prices (outcomes) for these markets
+                        if not isinstance(prices, list) or len(prices) != 2:
+                            logger.debug(
+                                f"Skipping Pinnacle market '{market_type_raw}' for matchup {pin_matchup_id} due to unexpected prices structure: {prices}"
+                            )
+                            continue
+
+                        # Assign prices based on expected structure (assuming home/away or over/under)
+                        # Need to handle based on market type
+                        odds_data_list = []
+                        market_line = None  # Overall line for the market
+                        raw_market_name = f"{market_type.value} - Period {period_raw}"  # Simple raw name for now
+
+                        if market_type == MarketType.MONEYLINE:
+                            # Usually price[0] = Home, price[1] = Away (confirm with 'designation' if needed)
+                            price_home = prices[0]
+                            price_away = prices[1]
+                            odds_home = american_to_decimal(price_home.get("price"))
+                            odds_away = american_to_decimal(price_away.get("price"))
+                            if odds_home and odds_away:
+                                odds_data_list.append(
+                                    (MarketSide.HOME, odds_home, None, None)
+                                )
+                                odds_data_list.append(
+                                    (MarketSide.AWAY, odds_away, None, None)
+                                )
+                                raw_market_name = "Moneyline"  # More specific
+
+                        elif market_type == MarketType.SPREAD:
+                            # price[0] might be home or away, check 'points' sign or potentially 'designation'
+                            # Assuming price[0] corresponds to home team's perspective for now
+                            price1 = prices[0]
+                            price2 = prices[1]
+                            points1 = self._parse_decimal(price1.get("points"))
+                            points2 = self._parse_decimal(price2.get("points"))
+                            odds1 = american_to_decimal(price1.get("price"))
+                            odds2 = american_to_decimal(price2.get("price"))
+
+                            if points1 is not None and odds1:
+                                # Assume points positive => home is +points, away is -points (or vice versa)
+                                # The side association depends on which participant price[0] refers to.
+                                # For now, assume price[0] is HOME side spread.
+                                odds_data_list.append(
+                                    (MarketSide.HOME, odds1, points1, None)
+                                )
+                                raw_market_name = (
+                                    f"Spread ({points1})"  # Add line to raw name
+                                )
+                                market_line = abs(points1)  # Base line for the market
+                            if points2 is not None and odds2:
+                                odds_data_list.append(
+                                    (MarketSide.AWAY, odds2, points2, None)
+                                )
+                                # Ensure market_line is set if only points2 was valid
+                                if market_line is None:
+                                    market_line = abs(points2)
+                                if (
+                                    raw_market_name
+                                    == f"{market_type.value} - Period {period_raw}"
+                                ):
+                                    raw_market_name = f"Spread ({points2})"
+
+                        elif market_type == MarketType.TOTAL:
+                            # price[0] is Over, price[1] is Under based on 'designation'
+                            price_over = None
+                            price_under = None
+                            for price in prices:
+                                if price.get("designation") == "over":
+                                    price_over = price
+                                if price.get("designation") == "under":
+                                    price_under = price
+
+                            if price_over and price_under:
+                                total_line = self._parse_decimal(
+                                    price_over.get("points")
+                                )  # Line is in 'points'
+                                odds_over = american_to_decimal(price_over.get("price"))
+                                odds_under = american_to_decimal(
+                                    price_under.get("price")
+                                )
+
+                                if total_line is not None and odds_over and odds_under:
+                                    odds_data_list.append(
+                                        (MarketSide.OVER, odds_over, None, total_line)
+                                    )
+                                    odds_data_list.append(
+                                        (MarketSide.UNDER, odds_under, None, total_line)
+                                    )
+                                    market_line = total_line
+                                    raw_market_name = f"Total ({total_line})"
+
+                        if not odds_data_list:
+                            logger.debug(
+                                f"No valid odds extracted for Pinnacle market '{market_type_raw}' for matchup {pin_matchup_id}"
+                            )
+                            continue
+
+                        # --- Create Market and Odds --- #
+                        market_id = generate_canonical_id(
+                            f"{game_id}_{market_type.value}_{market_line or 'base'}"
+                        )
+                        market = Market(
+                            market_id=market_id,
+                            game_id=game_id,
+                            market_type=market_type,
+                            line=market_line,
+                            period=Period.FULL_GAME,  # Period 0 maps to Full Game
+                            raw_market_name=raw_market_name,  # Use generated name
+                            odds=[],
+                        )
+
+                        for side, price, points_val, line_val in odds_data_list:
+                            odds = Odds(
+                                market_id=market_id,
+                                bookmaker=bookmaker,
+                                side=side,
+                                points=points_val,
+                                line=line_val,
+                                decimal_odds=price,
+                                timestamp_collected=datetime.now(timezone.utc),
+                            )
+                            market.odds.append(odds)
+
+                        if market.odds:
+                            game.markets.append(market)
+                        else:
+                            logger.debug(
+                                f"Market '{market.raw_market_name}' (Matchup {pin_matchup_id}) has no valid outcomes, discarding."
+                            )
+
+                    except Exception as market_exc:
+                        logger.exception(
+                            f"Error processing Pinnacle market '{raw_market.get('type', 'UNKNOWN')}' for matchup {pin_matchup_id}: {market_exc}"
+                        )
+                    logger.debug(f"Problematic market data: {raw_market}")
+
+                # --- Finish Game Processing --- #
+                if game.markets:
+                    normalized_games.append(game)
+                else:
+                    logger.debug(
+                        f"Pinnacle Game {game.game_id} (API ID: {pin_matchup_id}) has no valid markets, discarding."
+                    )
+
+            except Exception as game_exc:
+                logger.exception(
+                    f"Error processing Pinnacle matchup {raw_matchup.get('id', 'UNKNOWN')}: {game_exc}"
+                )
+                logger.debug(f"Problematic matchup data: {raw_matchup}")
+
+        logger.info(
+            f"Finished normalization for Pinnacle league {league_id_api}. Produced {len(normalized_games)} Game objects."
+        )
+        return normalized_games
+
+    def _map_pinnacle_market_type(
+        self, raw_market_name: Optional[str]
+    ) -> Optional[MarketType]:
+        """Maps Pinnacle market type string to our enum."""
+        # Simple mapping based on observed values
+        if not raw_market_name:
+            return None
+        raw_lower = raw_market_name.lower().strip()
+        if raw_lower == "moneyline":
+            return MarketType.MONEYLINE
+        if raw_lower == "spread":
+            return MarketType.SPREAD
+        if raw_lower == "total":
+            return MarketType.TOTAL
+        # Add other mappings if needed (e.g., 'team_total')
+        logger.debug(f"Unknown Pinnacle market type encountered: {raw_market_name}")
+        return None
 
     # --- Helper methods for mapping and parsing ---
 

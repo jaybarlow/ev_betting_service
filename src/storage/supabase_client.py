@@ -177,48 +177,129 @@ async def save_odds(odds_list: List[Odds]) -> bool:
     return await _handle_upsert("odds", odds_data)
 
 
-async def save_normalized_data(games: List[Game]) -> bool:
-    """Saves all normalized data (games, markets, odds, teams) to Supabase."""
-    # This function relies on the save_* functions which now use the async handler
-    if not games:
+async def save_normalized_data(normalized_games: List[Game]) -> bool:
+    """Saves all normalized data (games, markets, odds, teams) to Supabase,
+    handling potential duplicate games from different sources by merging markets."""
+
+    if not normalized_games:
         logger.warning("No normalized games provided to save.")
         return True
 
-    # --- Extract unique entities ---
+    # --- Robust Game Deduplication and Merging ---
+    canonical_games: Dict[Tuple, Game] = {}
     all_teams: Dict[str, Team] = {}
     all_markets: Dict[str, Market] = {}
     all_odds_raw: List[Odds] = []
 
-    for game in games:
+    def get_fuzzy_game_key(game: Game) -> Optional[Tuple]:
+        """Generates a key to identify potentially duplicate games."""
+        if not game.home_team or not game.away_team or not game.start_time_utc:
+            logger.warning(
+                f"Game {game.game_id} missing team or start time for fuzzy key."
+            )
+            return None
+
+        # Sort canonical names to handle potential home/away swaps between sources
+        team_names_tuple = tuple(
+            sorted((game.home_team.canonical_name, game.away_team.canonical_name))
+        )
+        game_date = game.start_time_utc.date()  # Match on date initially
+
+        return (game.sport.value, game.league.value, team_names_tuple, game_date)
+
+    logger.info(
+        f"Starting deduplication and merging for {len(normalized_games)} input games."
+    )
+    merged_market_count = 0
+    discarded_game_count = 0
+    processed_market_ids_in_canonical = (
+        set()
+    )  # Keep track of market IDs added to canonical games
+
+    for game in normalized_games:
+        # Always collect teams
         if game.home_team and game.home_team.team_id not in all_teams:
             all_teams[game.home_team.team_id] = game.home_team
         if game.away_team and game.away_team.team_id not in all_teams:
             all_teams[game.away_team.team_id] = game.away_team
 
-        for market in game.markets:
-            if market.market_id not in all_markets:
-                all_markets[market.market_id] = market
-            all_odds_raw.extend(market.odds)
+        fuzzy_key = get_fuzzy_game_key(game)
+        if not fuzzy_key:
+            logger.warning(
+                f"Skipping game {game.game_id} due to inability to generate fuzzy key."
+            )
+            discarded_game_count += 1
+            continue
+
+        if fuzzy_key not in canonical_games:
+            # This is the first time we've seen this game (based on the fuzzy key)
+            canonical_games[fuzzy_key] = game
+            logger.debug(
+                f"Identified game {game.game_id} as canonical for key {fuzzy_key}"
+            )
+            # Collect its markets and odds
+            for market in game.markets:
+                if market.market_id not in all_markets:
+                    all_markets[market.market_id] = market
+                    processed_market_ids_in_canonical.add(market.market_id)
+                    all_odds_raw.extend(market.odds)
+                # Handle case where market might exist from a previous duplicate? Unlikely but safe.
+                elif market.market_id not in processed_market_ids_in_canonical:
+                    # If market exists in all_markets but wasn't processed as part of a canonical game yet
+                    all_odds_raw.extend(market.odds)
+                    processed_market_ids_in_canonical.add(market.market_id)
+
+        else:
+            # This game is a duplicate. Update its markets' game_id and collect entities.
+            canonical_game = canonical_games[fuzzy_key]
+            logger.debug(
+                f"Game {game.game_id} is a duplicate of {canonical_game.game_id} (key {fuzzy_key}). Merging markets."
+            )
+            discarded_game_count += 1
+
+            if game.markets:
+                for market_to_merge in game.markets:
+                    # ** CRITICAL STEP: Update game_id before collecting **
+                    original_market_game_id = market_to_merge.game_id
+                    market_to_merge.game_id = canonical_game.game_id
+                    logger.debug(
+                        f"Updated market {market_to_merge.market_id} game_id from {original_market_game_id} to {canonical_game.game_id}"
+                    )
+
+                    if market_to_merge.market_id not in all_markets:
+                        all_markets[market_to_merge.market_id] = market_to_merge
+                        processed_market_ids_in_canonical.add(market_to_merge.market_id)
+                        all_odds_raw.extend(market_to_merge.odds)
+                        merged_market_count += 1
+                    elif (
+                        market_to_merge.market_id
+                        not in processed_market_ids_in_canonical
+                    ):
+                        # Market already exists, but we haven't added its odds yet (edge case)
+                        all_odds_raw.extend(market_to_merge.odds)
+                        processed_market_ids_in_canonical.add(market_to_merge.market_id)
+                        merged_market_count += (
+                            1  # Count as merge even if only odds added
+                        )
+
+    # The list of games to save is now the values from the canonical_games map
+    games_to_save = list(canonical_games.values())
 
     logger.info(
-        f"Extracted {len(all_teams)} unique teams, {len(all_markets)} unique markets, and {len(all_odds_raw)} raw odds instances."
+        f"Finished deduplication. Saving {len(games_to_save)} canonical games."
+        f" Merged/processed {merged_market_count} markets from {discarded_game_count} duplicate game objects."
     )
 
-    # --- Filter odds ---
-    # Key needs to uniquely identify the specific outcome (market+book+side+points/line)
-    latest_odds_map: Dict[
-        Tuple[str, Bookmaker, MarketSide, Optional[Decimal], Optional[Decimal]], Odds
-    ] = {}
+    # --- Extract unique entities (post-merge) ---\n    # Entities were already collected above, just log counts
+    logger.info(
+        f"Total unique entities collected: {len(all_teams)} teams, "
+        f"{len(all_markets)} markets, {len(all_odds_raw)} raw odds instances."
+    )
+
+    # --- Filter odds (using the established primary key logic) ---\n    # (Same logic as before)
+    latest_odds_map: Dict[Tuple[str, Bookmaker, MarketSide], Odds] = {}
     for odds_item in all_odds_raw:
-        # Use a more specific key including side and points/line
-        key = (
-            odds_item.market_id,
-            odds_item.bookmaker,
-            odds_item.side,
-            odds_item.points,
-            odds_item.line,
-        )
-        # Check if this specific outcome is new or has a later timestamp
+        key = (odds_item.market_id, odds_item.bookmaker, odds_item.side)
         if (
             key not in latest_odds_map
             or odds_item.timestamp_collected > latest_odds_map[key].timestamp_collected
@@ -233,22 +314,29 @@ async def save_normalized_data(games: List[Game]) -> bool:
     # --- Save entities ---
     success_teams = await save_teams(list(all_teams.values()))
     if not success_teams:
+        logger.error("Failed to save teams.")
         return False
 
-    success_games = await save_games(games)
+    # Save the canonical list of games (which now contain merged markets)
+    success_games = await save_games(games_to_save)
     if not success_games:
+        logger.error("Failed to save canonical games.")
         return False
 
+    # Save all unique markets collected from all games (canonical and duplicates)
     success_markets = await save_markets(list(all_markets.values()))
     if not success_markets:
+        logger.error("Failed to save unique markets.")
         return False
 
+    # Save the filtered latest odds
     success_odds = await save_odds(unique_latest_odds)
     if not success_odds:
+        logger.error("Failed to save unique latest odds.")
         return False
 
     logger.success(
-        "Successfully saved all normalized data components to Supabase (async)."
+        "Successfully saved all deduplicated and merged data components to Supabase."
     )
     return True
 

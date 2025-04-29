@@ -57,6 +57,9 @@ class AppSettings(BaseSettings):
     # Logging Configuration
     LOG_LEVEL: str = "INFO"
 
+    # New setting
+    PINNACLE_API_KEY: str = ""
+
 
 def load_settings() -> AppSettings:
     """Loads and validates application settings."""
